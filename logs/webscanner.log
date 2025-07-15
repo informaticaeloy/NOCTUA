@@ -1,0 +1,2323 @@
+2025-07-03 16:33:52,821 - INFO - app - Aplicación iniciada
+2025-07-03 16:33:58,417 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/
+2025-07-03 16:34:02,384 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/
+2025-07-03 16:34:11,654 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/
+2025-07-03 16:36:14,703 - INFO - app - Aplicación iniciada
+2025-07-03 16:36:55,542 - ERROR - app - Exception on /new_scan [POST]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 71, in new_scan
+    flash(f'Escaneo creado con ID: {scan_id}', 'success')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/helpers.py", line 335, in flash
+    session["_flashes"] = flashes
+    ~~~~~~~^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/sessions.py", line 104, in _fail
+    raise RuntimeError(
+    ...<3 lines>...
+    )
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2025-07-03 16:36:55,545 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/new_scan - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-03 16:57:03,791 - INFO - app - Aplicación iniciada
+2025-07-03 17:01:18,999 - INFO - app - Aplicación iniciada
+2025-07-03 17:06:58,382 - INFO - app - Aplicación iniciada
+2025-07-03 17:09:35,881 - INFO - app - Aplicación iniciada
+2025-07-03 17:13:02,865 - INFO - app - Aplicación iniciada
+2025-07-03 17:13:34,957 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-03 17:15:09,954 - INFO - app - Aplicación iniciada
+2025-07-03 17:15:17,295 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-03 17:24:58,706 - INFO - app - Aplicación iniciada
+2025-07-03 17:25:04,211 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-03 17:25:28,543 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-03 17:28:12,984 - INFO - app - Aplicación iniciada
+2025-07-03 17:28:16,815 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-03 17:29:58,207 - INFO - app - Aplicación iniciada
+2025-07-03 17:30:02,074 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-03 17:30:39,941 - INFO - app - Aplicación iniciada
+2025-07-03 17:30:43,661 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-03 17:31:16,686 - INFO - app - Aplicación iniciada
+2025-07-03 17:31:19,930 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-03 17:33:08,503 - INFO - app - Aplicación iniciada
+2025-07-03 17:33:12,573 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-03 17:33:37,333 - INFO - app - Aplicación iniciada
+2025-07-03 17:33:40,769 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-03 17:34:27,068 - INFO - app - Aplicación iniciada
+2025-07-03 17:34:31,869 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-03 17:34:59,400 - INFO - app - Aplicación iniciada
+2025-07-03 17:35:03,706 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-03 17:36:14,740 - INFO - app - Aplicación iniciada
+2025-07-03 17:36:17,919 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-03 17:40:37,050 - INFO - app - Aplicación iniciada
+2025-07-03 17:42:27,568 - INFO - app - Aplicación iniciada
+2025-07-03 17:43:03,741 - INFO - app - Aplicación iniciada
+2025-07-03 17:44:11,851 - ERROR - app - Exception on /report/3d67e600-9899-400f-aa18-8df442e141db [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 88, in show_report
+    return render_template('report.html', scan=scan)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: report.html
+2025-07-03 17:44:11,855 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/report/3d67e600-9899-400f-aa18-8df442e141db - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-03 17:49:00,869 - INFO - app - Aplicación iniciada
+2025-07-03 17:49:51,844 - INFO - app - Aplicación iniciada
+2025-07-03 17:52:04,430 - INFO - app - Aplicación iniciada
+2025-07-04 09:22:07,525 - ERROR - app - Exception on /report/4cb5562f-86d4-4b89-b692-d485aaa66037 [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 98, in show_report
+    return render_template('report.html', scan=scan)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: report.html
+2025-07-04 09:22:07,536 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/report/4cb5562f-86d4-4b89-b692-d485aaa66037 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-04 11:03:04,270 - INFO - app - Aplicación iniciada
+2025-07-04 11:05:47,783 - INFO - app - Aplicación iniciada
+2025-07-04 11:07:21,582 - INFO - app - Aplicación iniciada
+2025-07-04 11:09:24,043 - INFO - app - Aplicación iniciada
+2025-07-04 11:11:13,531 - INFO - app - Aplicación iniciada
+2025-07-04 11:11:16,602 - ERROR - app - Exception on /new_scan [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 97, in new_scan
+    return render_template('new_scan.html', modules=modules_available)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/new_scan.html", line 52, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2025-07-04 11:11:16,605 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/new_scan - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-04 11:11:39,415 - INFO - app - Aplicación iniciada
+2025-07-04 11:13:00,756 - INFO - app - Aplicación iniciada
+2025-07-04 11:59:37,310 - INFO - app - Aplicación iniciada
+2025-07-04 12:05:21,875 - INFO - app - Aplicación iniciada
+2025-07-04 12:08:06,930 - INFO - app - Aplicación iniciada
+2025-07-04 12:08:41,268 - INFO - app - Aplicación iniciada
+2025-07-04 12:11:46,377 - INFO - app - Aplicación iniciada
+2025-07-04 12:16:41,101 - INFO - app - Aplicación iniciada
+2025-07-04 12:25:17,848 - INFO - app - Aplicación iniciada
+2025-07-04 12:25:21,463 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 26, in index
+    return render_template('index.html', scans=scans)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/index.html", line 44, in template
+    <td data-order="{{ scan.created_at }}">{{ scan.created_at | datetimeformat }}</td>
+    ^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateAssertionError: No filter named 'datetimeformat'.
+2025-07-04 12:25:21,467 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-04 12:27:47,494 - INFO - app - Aplicación iniciada
+2025-07-04 12:31:45,035 - INFO - app - Aplicación iniciada
+2025-07-04 12:32:48,384 - INFO - app - Aplicación iniciada
+2025-07-04 12:33:01,712 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 12:33:23,055 - INFO - app - Aplicación iniciada
+2025-07-04 12:33:26,853 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 12:35:39,813 - INFO - app - Aplicación iniciada
+2025-07-04 12:35:47,936 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 12:39:43,034 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 12:41:14,177 - INFO - app - Aplicación iniciada
+2025-07-04 12:41:17,714 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 12:41:36,881 - INFO - app - Aplicación iniciada
+2025-07-04 12:41:40,057 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 12:42:25,146 - INFO - app - Aplicación iniciada
+2025-07-04 12:42:30,729 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 12:42:47,544 - INFO - app - Aplicación iniciada
+2025-07-04 12:42:51,159 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 12:44:12,064 - INFO - app - Aplicación iniciada
+2025-07-04 12:44:15,419 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 12:44:57,901 - INFO - app - Aplicación iniciada
+2025-07-04 12:45:01,062 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 12:49:32,008 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 12:51:22,081 - INFO - app - Aplicación iniciada
+2025-07-04 12:51:25,753 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 12:52:37,251 - INFO - app - Aplicación iniciada
+2025-07-04 12:52:40,812 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 12:53:34,551 - INFO - app - Aplicación iniciada
+2025-07-04 12:53:37,985 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 12:53:38,177 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 12:53:48,186 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 12:53:58,188 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 12:54:08,191 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 12:54:18,191 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 12:54:28,178 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 12:54:38,671 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 12:54:48,659 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 12:54:58,662 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 12:55:08,667 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 12:55:18,670 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 12:55:28,673 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 12:55:40,668 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 12:56:40,667 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 12:57:40,668 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 13:00:45,324 - INFO - app - Aplicación iniciada
+2025-07-04 13:00:48,187 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 13:00:48,846 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 13:00:49,050 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 13:00:59,054 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 13:01:09,064 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 13:01:19,055 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 13:01:29,065 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 13:01:39,059 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 13:01:49,050 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 13:01:59,059 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 13:02:09,050 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 13:02:19,670 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 13:02:29,656 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 13:02:37,617 - INFO - app - Aplicación iniciada
+2025-07-04 13:02:39,661 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/list_scans
+2025-07-04 13:02:41,058 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 13:02:41,265 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/scans
+2025-07-04 13:02:51,273 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/scans
+2025-07-04 13:03:01,278 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/scans
+2025-07-04 13:03:11,663 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/scans
+2025-07-04 13:03:21,660 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/scans
+2025-07-04 13:03:26,677 - INFO - app - Aplicación iniciada
+2025-07-04 13:03:30,376 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 13:08:48,898 - INFO - app - Aplicación iniciada
+2025-07-04 13:12:15,396 - INFO - app - Aplicación iniciada
+2025-07-04 13:14:05,887 - INFO - app - Aplicación iniciada
+2025-07-04 13:18:20,032 - INFO - app - Aplicación iniciada
+2025-07-04 13:19:51,194 - INFO - app - Aplicación iniciada
+2025-07-04 13:20:51,516 - INFO - app - Aplicación iniciada
+2025-07-04 13:21:05,400 - INFO - app - Aplicación iniciada
+2025-07-04 13:22:30,815 - INFO - app - Aplicación iniciada
+2025-07-04 13:24:33,843 - INFO - app - Aplicación iniciada
+2025-07-04 13:25:32,895 - INFO - app - Aplicación iniciada
+2025-07-04 13:27:24,541 - INFO - app - Aplicación iniciada
+2025-07-04 13:28:04,880 - INFO - app - Aplicación iniciada
+2025-07-04 13:30:24,516 - INFO - app - Aplicación iniciada
+2025-07-04 13:30:55,406 - INFO - app - Aplicación iniciada
+2025-07-04 13:31:01,998 - INFO - app - Aplicación iniciada
+2025-07-04 13:34:43,113 - INFO - app - Aplicación iniciada
+2025-07-04 13:35:19,493 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 13:39:26,245 - INFO - app - Aplicación iniciada
+2025-07-04 13:39:29,326 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 13:40:10,945 - INFO - app - Aplicación iniciada
+2025-07-04 13:40:50,644 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 13:42:09,867 - INFO - app - Aplicación iniciada
+2025-07-04 13:57:07,892 - INFO - app - Aplicación iniciada
+2025-07-04 13:59:42,543 - INFO - app - Aplicación iniciada
+2025-07-04 14:01:34,156 - INFO - app - Aplicación iniciada
+2025-07-04 14:04:28,515 - INFO - app - Aplicación iniciada
+2025-07-04 14:04:54,653 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/delete_scan/636848b9-bf1f-45bc-a0f8-a7e86a138bc3
+2025-07-04 15:22:56,912 - INFO - app - Aplicación iniciada
+2025-07-04 15:31:54,614 - INFO - app - Aplicación iniciada
+2025-07-04 15:32:21,161 - INFO - app - Aplicación iniciada
+2025-07-04 16:03:22,822 - INFO - app - Aplicación iniciada
+2025-07-04 16:05:52,186 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/delete_scan/d9f62b98-a8f2-4427-a0f3-f48b994ebd69
+2025-07-04 16:07:02,331 - INFO - app - Aplicación iniciada
+2025-07-04 16:15:57,728 - INFO - app - Aplicación iniciada
+2025-07-04 16:17:51,006 - INFO - app - Aplicación iniciada
+2025-07-04 16:19:59,779 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:25:48,475 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:25:50,627 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:26:11,450 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:26:15,030 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:27:19,485 - INFO - app - Aplicación iniciada
+2025-07-04 16:27:23,347 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:27:40,580 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:27:50,810 - ERROR - app - Exception on /new_scan [POST]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 77, in new_scan
+    scan_id = str(uuid.uuid())
+                  ^^^^^^^^^
+AttributeError: module 'uuid' has no attribute 'uuid'. Did you mean: 'uuid1'?
+2025-07-04 16:27:50,812 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/new_scan - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-04 16:27:50,838 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:32:13,613 - INFO - app - Aplicación iniciada
+2025-07-04 16:32:17,996 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:32:20,852 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:32:29,094 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:32:38,544 - ERROR - app - Exception on /new_scan [POST]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 77, in new_scan
+    scan_id = str(uuid.uuid())
+                  ^^^^^^^^^
+AttributeError: module 'uuid' has no attribute 'uuid'. Did you mean: 'uuid1'?
+2025-07-04 16:32:38,546 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/new_scan - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-04 16:32:38,583 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:33:25,729 - INFO - app - Aplicación iniciada
+2025-07-04 16:33:30,034 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:33:37,308 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:33:46,748 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:34:16,111 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:34:17,194 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:37:33,750 - INFO - app - Aplicación iniciada
+2025-07-04 16:37:37,458 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:37:38,783 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:38:01,785 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:42:54,455 - INFO - app - Aplicación iniciada
+2025-07-04 16:42:57,943 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:43:01,080 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:43:10,607 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:47:42,379 - INFO - app - Aplicación iniciada
+2025-07-04 16:47:46,839 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:47:59,182 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:48:12,739 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:48:19,367 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:50:27,628 - INFO - app - Aplicación iniciada
+2025-07-04 16:50:31,983 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:50:33,194 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:50:54,265 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:52:17,283 - INFO - app - Aplicación iniciada
+2025-07-04 16:52:21,709 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:54:05,011 - INFO - app - Aplicación iniciada
+2025-07-04 16:54:54,661 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 16:58:50,459 - INFO - app - Aplicación iniciada
+2025-07-04 16:59:04,652 - ERROR - app - Exception on /api/scans [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_api.py", line 39, in list_scans
+    scan_data = json.load(f)
+  File "/usr/lib/python3.13/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 14 column 15 (char 323)
+2025-07-04 16:59:04,658 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/api/scans - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-04 16:59:07,091 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 25, in index
+    scans = load_all_scans()
+  File "/home/usuario/webscanner/routes/scan_web.py", line 19, in load_all_scans
+    scan_data = json.load(f)
+  File "/usr/lib/python3.13/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 14 column 15 (char 323)
+2025-07-04 16:59:07,092 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-04 16:59:07,161 - ERROR - app - Exception on /api/scans [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_api.py", line 39, in list_scans
+    scan_data = json.load(f)
+  File "/usr/lib/python3.13/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 14 column 15 (char 323)
+2025-07-04 16:59:07,162 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/api/scans - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-04 17:00:09,943 - INFO - app - Aplicación iniciada
+2025-07-04 17:01:41,518 - INFO - app - Aplicación iniciada
+2025-07-04 17:02:55,980 - INFO - app - Aplicación iniciada
+2025-07-04 17:03:55,927 - INFO - app - Aplicación iniciada
+2025-07-04 17:05:06,853 - INFO - app - Aplicación iniciada
+2025-07-04 17:05:34,774 - INFO - app - Aplicación iniciada
+2025-07-04 17:06:30,383 - INFO - app - Aplicación iniciada
+2025-07-04 17:09:52,884 - INFO - app - Aplicación iniciada
+2025-07-04 17:32:04,476 - INFO - app - Aplicación iniciada
+2025-07-04 17:48:04,672 - INFO - app - Aplicación iniciada
+2025-07-04 17:51:33,448 - INFO - app - Aplicación iniciada
+2025-07-04 17:53:11,335 - INFO - app - Aplicación iniciada
+2025-07-04 17:53:20,834 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 17:55:31,188 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 17:59:55,231 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-04 18:01:23,532 - INFO - app - Aplicación iniciada
+2025-07-04 18:02:07,138 - INFO - app - Aplicación iniciada
+2025-07-04 18:13:07,583 - INFO - app - Aplicación iniciada
+2025-07-04 18:13:32,148 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/pause_scan/e3221b44
+2025-07-04 18:22:39,823 - INFO - app - Aplicación iniciada
+2025-07-04 18:33:38,641 - INFO - app - Aplicación iniciada
+2025-07-04 18:37:00,269 - INFO - app - Aplicación iniciada
+2025-07-04 18:48:50,628 - INFO - app - Aplicación iniciada
+2025-07-04 18:50:58,331 - INFO - app - Aplicación iniciada
+2025-07-07 07:56:49,780 - INFO - app - Aplicación iniciada
+2025-07-07 08:10:41,503 - INFO - app - Aplicación iniciada
+2025-07-07 08:13:45,935 - INFO - app - Aplicación iniciada
+2025-07-07 08:17:06,923 - INFO - app - Aplicación iniciada
+2025-07-07 08:27:09,608 - INFO - app - Aplicación iniciada
+2025-07-07 08:33:40,535 - INFO - app - Aplicación iniciada
+2025-07-07 08:43:19,578 - INFO - app - Aplicación iniciada
+2025-07-07 08:48:04,256 - INFO - app - Aplicación iniciada
+2025-07-07 09:08:07,284 - INFO - app - Aplicación iniciada
+2025-07-07 09:08:44,769 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/favicon.ico
+2025-07-07 09:11:05,154 - INFO - app - Aplicación iniciada
+2025-07-07 09:18:55,439 - INFO - app - Aplicación iniciada
+2025-07-07 09:19:26,515 - INFO - app - Aplicación iniciada
+2025-07-07 09:23:12,428 - INFO - app - Aplicación iniciada
+2025-07-07 09:27:58,294 - INFO - app - Aplicación iniciada
+2025-07-07 10:08:47,380 - INFO - app - Aplicación iniciada
+2025-07-07 10:18:36,014 - INFO - app - Aplicación iniciada
+2025-07-07 10:23:03,657 - INFO - app - Aplicación iniciada
+2025-07-07 10:24:04,714 - INFO - app - Aplicación iniciada
+2025-07-07 10:27:13,559 - INFO - app - Aplicación iniciada
+2025-07-07 10:34:41,013 - INFO - app - Aplicación iniciada
+2025-07-07 10:42:13,004 - INFO - app - Aplicación iniciada
+2025-07-07 10:47:49,763 - INFO - app - Aplicación iniciada
+2025-07-07 10:50:19,440 - INFO - app - Aplicación iniciada
+2025-07-07 10:52:20,560 - INFO - app - Aplicación iniciada
+2025-07-07 11:21:50,320 - INFO - app - Aplicación iniciada
+2025-07-07 11:36:31,127 - INFO - app - Aplicación iniciada
+2025-07-07 11:42:03,211 - INFO - app - Aplicación iniciada
+2025-07-07 11:43:25,683 - INFO - app - Aplicación iniciada
+2025-07-07 12:01:16,268 - INFO - app - Aplicación iniciada
+2025-07-07 13:02:05,251 - INFO - app - Aplicación iniciada
+2025-07-07 13:03:33,332 - INFO - app - Aplicación iniciada
+2025-07-07 13:05:15,197 - INFO - app - Aplicación iniciada
+2025-07-07 13:06:39,933 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/api/report/cc0286a3
+2025-07-07 13:09:48,349 - INFO - app - Aplicación iniciada
+2025-07-07 13:09:55,108 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/report/cc0286a3
+2025-07-07 13:18:50,423 - INFO - app - Aplicación iniciada
+2025-07-07 13:18:56,108 - ERROR - app - Exception on /report/cc0286a3 [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/reports.py", line 18, in show_report
+    print(json.dumps(scan, indent=2))
+          ^^^^
+NameError: name 'json' is not defined. Did you forget to import 'json'?
+2025-07-07 13:18:56,112 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/report/cc0286a3 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-07 13:21:43,789 - INFO - app - Aplicación iniciada
+2025-07-07 13:21:43,796 - INFO - app - Aplicación iniciada
+2025-07-07 13:37:13,004 - INFO - app - Aplicación iniciada
+2025-07-07 13:37:13,083 - INFO - app - Aplicación iniciada
+2025-07-07 13:39:25,452 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 15, in index
+    return render_template('index.html', scans=scans)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/usuario/webscanner/templates/base.html", line 28, in top-level template code
+    <a href="{{ url_for('status.status_check') }}" class="btn btn-outline-light">Ver estado del sistema</a>
+    ^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'status.status_check'. Did you mean 'status.status' instead?
+2025-07-07 13:39:25,458 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-07 13:39:33,538 - INFO - app - Aplicación iniciada
+2025-07-07 13:39:33,552 - INFO - app - Aplicación iniciada
+2025-07-07 13:39:36,565 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 15, in index
+    return render_template('index.html', scans=scans)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/usuario/webscanner/templates/base.html", line 28, in top-level template code
+    <a href="{{ url_for('status.status_check') }}" class="btn btn-outline-light">Ver estado del sistema</a>
+    ^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'status.status_check'. Did you mean 'status.status' instead?
+2025-07-07 13:39:36,569 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-07 13:40:06,686 - INFO - app - Aplicación iniciada
+2025-07-07 13:40:12,513 - INFO - app - Aplicación iniciada
+2025-07-07 13:40:12,562 - INFO - app - Aplicación iniciada
+2025-07-07 13:44:38,739 - INFO - app - Aplicación iniciada
+2025-07-07 13:44:38,755 - INFO - app - Aplicación iniciada
+2025-07-07 13:47:37,240 - INFO - app - Aplicación iniciada
+2025-07-07 13:47:37,316 - INFO - app - Aplicación iniciada
+2025-07-07 13:50:34,332 - INFO - app - Aplicación iniciada
+2025-07-07 13:50:34,332 - INFO - app - Aplicación iniciada
+2025-07-07 13:51:36,876 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-07 13:52:42,978 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-07 13:52:52,299 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-07 13:52:53,340 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-07 13:52:54,838 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-07 13:53:28,558 - INFO - app - Aplicación iniciada
+2025-07-07 13:53:28,600 - INFO - app - Aplicación iniciada
+2025-07-07 13:53:45,203 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-07 13:55:31,398 - INFO - app - Aplicación iniciada
+2025-07-07 13:55:31,484 - INFO - app - Aplicación iniciada
+2025-07-07 13:55:34,076 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-07 13:55:35,671 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-07 13:58:08,291 - INFO - app - Aplicación iniciada
+2025-07-07 13:58:08,325 - INFO - app - Aplicación iniciada
+2025-07-07 13:58:11,927 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-07 13:59:34,890 - INFO - app - Aplicación iniciada
+2025-07-07 13:59:34,929 - INFO - app - Aplicación iniciada
+2025-07-07 14:03:18,913 - INFO - app - Aplicación iniciada
+2025-07-07 14:03:18,924 - INFO - app - Aplicación iniciada
+2025-07-07 14:05:50,541 - INFO - app - Aplicación iniciada
+2025-07-07 14:05:50,578 - INFO - app - Aplicación iniciada
+2025-07-07 14:08:34,952 - INFO - app - Aplicación iniciada
+2025-07-07 14:08:35,047 - INFO - app - Aplicación iniciada
+2025-07-07 14:11:25,528 - INFO - app - Aplicación iniciada
+2025-07-07 14:11:25,623 - INFO - app - Aplicación iniciada
+2025-07-07 14:15:14,163 - INFO - app - Aplicación iniciada
+2025-07-07 14:15:14,179 - INFO - app - Aplicación iniciada
+2025-07-07 14:16:49,151 - INFO - app - Aplicación iniciada
+2025-07-07 14:16:49,151 - INFO - app - Aplicación iniciada
+2025-07-07 14:17:43,397 - INFO - app - Aplicación iniciada
+2025-07-07 14:17:43,447 - INFO - app - Aplicación iniciada
+2025-07-07 14:18:44,756 - INFO - app - Aplicación iniciada
+2025-07-07 14:18:44,804 - INFO - app - Aplicación iniciada
+2025-07-07 14:20:54,778 - INFO - app - Aplicación iniciada
+2025-07-07 14:20:54,877 - INFO - app - Aplicación iniciada
+2025-07-07 14:21:29,150 - INFO - app - Aplicación iniciada
+2025-07-07 14:21:29,183 - INFO - app - Aplicación iniciada
+2025-07-07 14:21:56,220 - INFO - app - Aplicación iniciada
+2025-07-07 14:21:56,281 - INFO - app - Aplicación iniciada
+2025-07-07 14:23:36,239 - INFO - app - Aplicación iniciada
+2025-07-07 14:23:36,308 - INFO - app - Aplicación iniciada
+2025-07-07 14:26:26,314 - INFO - app - Aplicación iniciada
+2025-07-07 14:26:26,319 - INFO - app - Aplicación iniciada
+2025-07-07 14:35:00,365 - INFO - app - Aplicación iniciada
+2025-07-07 14:35:00,437 - INFO - app - Aplicación iniciada
+2025-07-07 14:36:03,297 - INFO - app - Aplicación iniciada
+2025-07-07 14:46:26,102 - INFO - app - Aplicación iniciada
+2025-07-07 14:46:35,632 - ERROR - app - Exception on /report/edc86ecb [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/reports.py", line 132, in show_report
+    return render_template('report.html',
+                           scan_name=scan_name,
+    ...<5 lines>...
+                           modules=modules,
+                           modules_results=modules_results)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/report.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/usuario/webscanner/templates/base.html", line 53, in top-level template code
+    {% block content %}
+  File "/home/usuario/webscanner/templates/report.html", line 33, in block 'content'
+    {% set unique_id = 'mod_' ~ loop.index ~ '_' ~ loop.parent.loop.index %}
+    ^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'jinja2.runtime.LoopContext object' has no attribute 'parent'
+2025-07-07 14:46:35,638 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/report/edc86ecb - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-07 14:47:31,349 - INFO - app - Aplicación iniciada
+2025-07-07 14:48:53,273 - INFO - app - Aplicación iniciada
+2025-07-07 14:49:36,514 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-07 14:49:50,199 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-07 14:51:35,546 - INFO - app - Aplicación iniciada
+2025-07-07 14:52:38,594 - INFO - app - Aplicación iniciada
+2025-07-07 14:53:27,752 - INFO - app - Aplicación iniciada
+2025-07-07 14:54:22,148 - INFO - app - Aplicación iniciada
+2025-07-07 14:56:58,167 - INFO - app - Aplicación iniciada
+2025-07-07 14:58:36,880 - INFO - app - Aplicación iniciada
+2025-07-08 06:18:34,170 - INFO - app - Aplicación iniciada
+2025-07-08 06:18:37,448 - ERROR - app - Exception on /report/edc86ecb [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/reports.py", line 138, in show_report
+    return render_template('report.html',
+                           scan_name=scan_name,
+    ...<5 lines>...
+                           modules=modules,
+                           modules_results=modules_results)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/report.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/usuario/webscanner/templates/base.html", line 53, in top-level template code
+    {% block content %}
+  File "/home/usuario/webscanner/templates/report.html", line 28, in block 'content'
+    {% for i, mod in enumerate(modules) %}
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'enumerate' is undefined
+2025-07-08 06:18:37,458 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/report/edc86ecb - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 06:19:31,656 - INFO - app - Aplicación iniciada
+2025-07-08 06:20:49,569 - INFO - app - Aplicación iniciada
+2025-07-08 06:20:52,874 - ERROR - app - Exception on /report/edc86ecb [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/reports.py", line 138, in show_report
+    return render_template('report.html',
+                           scan_name=scan_name,
+    ...<5 lines>...
+                           modules=modules,
+                           modules_results=modules_results)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/report.html", line 36, in template
+    {% break %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'break'. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2025-07-08 06:20:52,883 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/report/edc86ecb - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 06:21:22,782 - INFO - app - Aplicación iniciada
+2025-07-08 06:22:19,077 - INFO - app - Aplicación iniciada
+2025-07-08 06:22:22,143 - ERROR - app - Exception on /report/edc86ecb [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/reports.py", line 138, in show_report
+    return render_template('report.html',
+                           scan_name=scan_name,
+    ...<5 lines>...
+                           modules=modules,
+                           modules_results=modules_results)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/report.html", line 37, in template
+    {% break %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'break'. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2025-07-08 06:22:22,147 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/report/edc86ecb - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 06:25:55,280 - INFO - app - Aplicación iniciada
+2025-07-08 06:26:01,944 - ERROR - app - Exception on /report/edc86ecb [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/reports.py", line 149, in show_report
+    return render_template('report.html',
+                           scan_name=scan_name,
+    ...<6 lines>...
+                           modules_results=modules_results,
+                           execution_dates=execution_dates)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/report.html", line 37, in template
+    {% break %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'break'. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2025-07-08 06:26:01,947 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/report/edc86ecb - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 06:30:53,298 - INFO - app - Aplicación iniciada
+2025-07-08 06:30:57,218 - ERROR - app - Exception on /report/edc86ecb [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/reports.py", line 149, in show_report
+    return render_template('report.html',
+                           scan_name=scan_name,
+    ...<6 lines>...
+                           modules_results=modules_results,
+                           execution_dates=execution_dates)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/report.html", line 37, in template
+    {% break %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'break'. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2025-07-08 06:30:57,222 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/report/edc86ecb - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 06:32:21,249 - INFO - app - Aplicación iniciada
+2025-07-08 06:34:01,437 - INFO - app - Aplicación iniciada
+2025-07-08 06:36:10,591 - INFO - app - Aplicación iniciada
+2025-07-08 06:37:04,920 - INFO - app - Aplicación iniciada
+2025-07-08 06:37:24,442 - INFO - app - Aplicación iniciada
+2025-07-08 06:37:48,750 - INFO - app - Aplicación iniciada
+2025-07-08 06:37:51,569 - ERROR - app - Exception on /report/edc86ecb [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/reports.py", line 148, in show_report
+    return render_template('report.html',
+                           scan_name=scan_name,
+    ...<6 lines>...
+                           modules_results=modules_results,
+                           execution_dates=execution_dates)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/report.html", line 37, in template
+    {% break %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'break'. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2025-07-08 06:37:51,572 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/report/edc86ecb - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 06:38:03,151 - INFO - app - Aplicación iniciada
+2025-07-08 06:40:33,158 - INFO - app - Aplicación iniciada
+2025-07-08 06:43:17,539 - INFO - app - Aplicación iniciada
+2025-07-08 06:46:09,627 - INFO - app - Aplicación iniciada
+2025-07-08 06:47:41,214 - INFO - app - Aplicación iniciada
+2025-07-08 06:48:10,920 - INFO - app - Aplicación iniciada
+2025-07-08 06:49:57,888 - INFO - app - Aplicación iniciada
+2025-07-08 06:50:57,239 - INFO - app - Aplicación iniciada
+2025-07-08 06:51:30,881 - INFO - app - Aplicación iniciada
+2025-07-08 06:52:02,807 - INFO - app - Aplicación iniciada
+2025-07-08 07:28:07,515 - INFO - app - Aplicación iniciada
+2025-07-08 07:28:11,107 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 15, in index
+    return render_template('index.html', scans=scans)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/usuario/webscanner/templates/base.html", line 45, in top-level template code
+    <a href="{{ url_for('scan_web.modules') }}" class="btn btn-outline-light me-2">
+    ^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'scan_web.modules'. Did you mean 'scan_web.index' instead?
+2025-07-08 07:28:11,114 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 07:31:54,972 - INFO - app - Aplicación iniciada
+2025-07-08 07:31:58,263 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 15, in index
+    return render_template('index.html', scans=scans)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/usuario/webscanner/templates/base.html", line 45, in top-level template code
+    <a href="{{ url_for('scan_web.modules') }}" class="btn btn-outline-light me-2">
+    ^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'scan_web.modules'. Did you mean 'scan_web.index' instead?
+2025-07-08 07:31:58,270 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 07:32:29,145 - INFO - app - Aplicación iniciada
+2025-07-08 07:33:36,059 - INFO - app - Aplicación iniciada
+2025-07-08 07:33:38,945 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 15, in index
+    return render_template('index.html', scans=scans)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/usuario/webscanner/templates/base.html", line 45, in top-level template code
+    <a href="{{ url_for('modules.modules') }}" class="btn btn-outline-light me-2">
+    ^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'modules.modules'. Did you mean 'modules.list_modules' instead?
+2025-07-08 07:33:38,951 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 07:34:09,156 - INFO - app - Aplicación iniciada
+2025-07-08 07:34:31,691 - INFO - app - Aplicación iniciada
+2025-07-08 07:38:36,107 - INFO - app - Aplicación iniciada
+2025-07-08 07:38:39,561 - ERROR - app - Exception on /modules [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/modules.py", line 28, in list_modules
+    return render_template('modules.html', modules=modules)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/modules.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/usuario/webscanner/templates/base.html", line 63, in top-level template code
+    {% block content %}
+  File "/home/usuario/webscanner/templates/modules.html", line 23, in block 'content'
+    {% for aggr_level, aggr_params in mod.params.aggressiveness.items()|sort %}
+    ^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'params'
+2025-07-08 07:38:39,568 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/modules - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 07:39:24,569 - INFO - app - Aplicación iniciada
+2025-07-08 07:39:27,081 - ERROR - app - Exception on /modules [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/modules.py", line 28, in list_modules
+    return render_template('modules.html', modules=modules)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/modules.html", line 48, in template
+    {% endfor %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endfor'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2025-07-08 07:39:27,087 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/modules - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 07:40:02,539 - INFO - app - Aplicación iniciada
+2025-07-08 07:42:37,775 - INFO - app - Aplicación iniciada
+2025-07-08 07:45:27,827 - INFO - app - Aplicación iniciada
+2025-07-08 07:47:02,872 - INFO - app - Aplicación iniciada
+2025-07-08 07:49:20,834 - INFO - app - Aplicación iniciada
+2025-07-08 07:51:34,960 - INFO - app - Aplicación iniciada
+2025-07-08 07:52:31,925 - INFO - app - Aplicación iniciada
+2025-07-08 07:53:45,717 - INFO - app - Aplicación iniciada
+2025-07-08 07:53:48,131 - ERROR - modules - Error leyendo módulo template_module.json: Expecting value: line 1 column 1 (char 0)
+2025-07-08 07:56:26,070 - INFO - app - Aplicación iniciada
+2025-07-08 07:56:28,977 - ERROR - modules - Error leyendo módulo template_module.json: Expecting value: line 1 column 1 (char 0)
+2025-07-08 07:58:27,320 - INFO - app - Aplicación iniciada
+2025-07-08 07:58:29,754 - ERROR - modules - Error leyendo módulo template_module.json: Expecting value: line 1 column 1 (char 0)
+2025-07-08 07:58:59,868 - INFO - app - Aplicación iniciada
+2025-07-08 07:59:02,793 - ERROR - modules - Error leyendo módulo template_module.json: Expecting value: line 1 column 1 (char 0)
+2025-07-08 08:00:46,612 - INFO - app - Aplicación iniciada
+2025-07-08 08:00:52,862 - ERROR - modules - Error leyendo módulo template_module.json: Expecting value: line 1 column 1 (char 0)
+2025-07-08 08:02:11,764 - INFO - app - Aplicación iniciada
+2025-07-08 08:02:15,471 - ERROR - modules - Error leyendo módulo template_module.json: Expecting value: line 1 column 1 (char 0)
+2025-07-08 08:04:26,744 - INFO - app - Aplicación iniciada
+2025-07-08 08:04:29,433 - ERROR - modules - Error leyendo módulo template_module.json: Expecting value: line 1 column 1 (char 0)
+2025-07-08 08:04:29,447 - ERROR - app - Exception on /modules [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/modules.py", line 40, in list_modules
+    return render_template('modules.html', modules=modules)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/modules.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/usuario/webscanner/templates/base.html", line 63, in top-level template code
+    {% block content %}
+  File "/home/usuario/webscanner/templates/modules.html", line 56, in block 'content'
+    {{ mod.raw_json | tojson(indent=2) }}
+    ^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/filters.py", line 1721, in do_tojson
+    return htmlsafe_json_dumps(value, dumps=dumps, **kwargs)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/utils.py", line 669, in htmlsafe_json_dumps
+    dumps(obj, **kwargs)
+    ~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/usr/lib/python3.13/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.13/json/encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Undefined is not JSON serializable
+2025-07-08 08:04:29,454 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/modules - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 08:06:02,860 - INFO - app - Aplicación iniciada
+2025-07-08 08:06:06,149 - ERROR - modules - Error leyendo módulo template_module.json: Expecting value: line 1 column 1 (char 0)
+2025-07-08 08:06:06,163 - ERROR - app - Exception on /modules [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/modules.py", line 49, in list_modules
+    return render_template('modules.html', modules=modules)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/modules.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/usuario/webscanner/templates/base.html", line 63, in top-level template code
+    {% block content %}
+  File "/home/usuario/webscanner/templates/modules.html", line 56, in block 'content'
+    {{ mod.raw_json | tojson(indent=2) }}
+    ^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/filters.py", line 1721, in do_tojson
+    return htmlsafe_json_dumps(value, dumps=dumps, **kwargs)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/utils.py", line 669, in htmlsafe_json_dumps
+    dumps(obj, **kwargs)
+    ~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/usr/lib/python3.13/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.13/json/encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+ValueError: Circular reference detected
+2025-07-08 08:06:06,167 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/modules - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 08:06:48,231 - INFO - app - Aplicación iniciada
+2025-07-08 08:06:50,647 - ERROR - modules - Error leyendo módulo template_module.json: Expecting value: line 1 column 1 (char 0)
+2025-07-08 08:08:15,080 - INFO - app - Aplicación iniciada
+2025-07-08 08:08:17,734 - ERROR - modules - Error leyendo módulo template_module.json: Expecting value: line 1 column 1 (char 0)
+2025-07-08 08:09:30,565 - INFO - app - Aplicación iniciada
+2025-07-08 08:09:33,207 - ERROR - modules - Error leyendo módulo template_module.json: Expecting value: line 1 column 1 (char 0)
+2025-07-08 08:11:27,751 - ERROR - modules - Error leyendo módulo template_module.json: Expecting value: line 1 column 1 (char 0)
+2025-07-08 08:11:42,796 - ERROR - modules - Error leyendo módulo template_module.json: Expecting value: line 1 column 1 (char 0)
+2025-07-08 08:26:01,822 - INFO - app - Aplicación iniciada
+2025-07-08 08:30:58,339 - INFO - app - Aplicación iniciada
+2025-07-08 10:42:53,112 - INFO - app - Aplicación iniciada
+2025-07-08 10:57:22,534 - INFO - app - Aplicación iniciada
+2025-07-08 10:57:49,676 - INFO - app - Aplicación iniciada
+2025-07-08 10:57:53,198 - ERROR - app - Exception on /scripts [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scripts.py", line 67, in list_scripts
+    return render_template('scripts.html', scripts=scripts)
+           ^^^^^^^^^^^^^^^
+NameError: name 'render_template' is not defined
+2025-07-08 10:57:53,201 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/scripts - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 10:59:16,660 - INFO - app - Aplicación iniciada
+2025-07-08 11:00:12,100 - ERROR - app - Exception on /scripts/edit/puppeteer_screenshot.json [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scripts.py", line 95, in edit_script
+    return render_template('edit_script.html', content=content, script_name=script_name)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: edit_script.html
+2025-07-08 11:00:12,105 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/scripts/edit/puppeteer_screenshot.json - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 11:02:21,748 - INFO - app - Aplicación iniciada
+2025-07-08 11:54:42,636 - INFO - app - Aplicación iniciada
+2025-07-08 12:00:45,768 - INFO - app - Aplicación iniciada
+2025-07-08 12:00:49,055 - ERROR - app - Exception on /scripts [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scripts.py", line 143, in list_scripts
+    scripts = prepare_scripts(scripts)
+  File "/home/usuario/webscanner/routes/scripts.py", line 97, in prepare_scripts
+    cmd_str = script['command'] + " " + " ".join(params_concat)
+              ~~~~~~^^^^^^^^^^^
+KeyError: 'command'
+2025-07-08 12:00:49,058 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/scripts - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 12:01:06,446 - ERROR - app - Exception on /scripts [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scripts.py", line 143, in list_scripts
+    scripts = prepare_scripts(scripts)
+  File "/home/usuario/webscanner/routes/scripts.py", line 97, in prepare_scripts
+    cmd_str = script['command'] + " " + " ".join(params_concat)
+              ~~~~~~^^^^^^^^^^^
+KeyError: 'command'
+2025-07-08 12:01:06,447 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/scripts - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 12:01:20,015 - INFO - app - Aplicación iniciada
+2025-07-08 12:01:22,165 - ERROR - app - Exception on /scripts [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scripts.py", line 143, in list_scripts
+    scripts = prepare_scripts(scripts)
+  File "/home/usuario/webscanner/routes/scripts.py", line 97, in prepare_scripts
+    cmd_str = script['command'] + " " + " ".join(params_concat)
+              ~~~~~~^^^^^^^^^^^
+KeyError: 'command'
+2025-07-08 12:01:22,167 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/scripts - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 12:01:58,440 - INFO - app - Aplicación iniciada
+2025-07-08 12:02:01,602 - ERROR - app - Exception on /scripts [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scripts.py", line 143, in list_scripts
+    scripts = prepare_scripts(scripts)
+  File "/home/usuario/webscanner/routes/scripts.py", line 97, in prepare_scripts
+    cmd_str = script['command'] + " " + " ".join(params_concat)
+              ~~~~~~^^^^^^^^^^^
+KeyError: 'command'
+2025-07-08 12:02:01,604 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/scripts - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 12:04:09,649 - INFO - app - Aplicación iniciada
+2025-07-08 12:04:13,065 - ERROR - app - Exception on /scripts [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scripts.py", line 143, in list_scripts
+    scripts = prepare_scripts(scripts)
+  File "/home/usuario/webscanner/routes/scripts.py", line 97, in prepare_scripts
+    cmd_str = script['command'] + " " + " ".join(params_concat)
+              ~~~~~~^^^^^^^^^^^
+KeyError: 'command'
+2025-07-08 12:04:13,067 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/scripts - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 12:04:55,965 - INFO - app - Aplicación iniciada
+2025-07-08 12:05:13,263 - ERROR - app - Exception on /scripts/edit/nmap.json [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scripts.py", line 158, in edit_script
+    return render_template('edit_script.html', content=content, script_name=script_name)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: edit_script.html
+2025-07-08 12:05:13,266 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/scripts/edit/nmap.json - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 12:08:03,062 - INFO - app - Aplicación iniciada
+2025-07-08 12:10:15,559 - INFO - app - Aplicación iniciada
+2025-07-08 12:11:48,478 - INFO - app - Aplicación iniciada
+2025-07-08 12:33:57,919 - INFO - app - Aplicación iniciada
+2025-07-08 12:51:45,540 - INFO - app - Aplicación iniciada
+2025-07-08 13:09:18,063 - INFO - app - Aplicación iniciada
+2025-07-08 13:17:44,304 - INFO - app - Aplicación iniciada
+2025-07-08 13:24:09,325 - INFO - app - Aplicación iniciada
+2025-07-08 13:34:56,523 - INFO - app - Aplicación iniciada
+2025-07-08 13:35:06,770 - ERROR - app - Exception on /new_scan [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 27, in new_scan
+    data = json.load(mf)
+  File "/usr/lib/python3.13/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-07-08 13:35:06,775 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/new_scan - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 13:36:54,472 - INFO - app - Aplicación iniciada
+2025-07-08 13:36:57,595 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 36, in index
+    return render_template('scan_list.html', scans=scan_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: scan_list.html
+2025-07-08 13:36:57,600 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 13:39:27,318 - INFO - app - Aplicación iniciada
+2025-07-08 13:39:35,473 - ERROR - app - Exception on /new_scan [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 27, in new_scan
+    data = json.load(mf)
+  File "/usr/lib/python3.13/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-07-08 13:39:35,477 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/new_scan - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 13:43:04,565 - INFO - app - Aplicación iniciada
+2025-07-08 13:43:06,843 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 24, in index
+    data = json.load(mf)
+  File "/usr/lib/python3.13/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-07-08 13:43:06,847 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 13:44:32,417 - INFO - app - Aplicación iniciada
+2025-07-08 13:44:35,386 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 53, in index
+    return render_template('index.html', scans=scans, modules_info=modules_info, scripts_info=scripts_info)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/usuario/webscanner/templates/base.html", line 73, in top-level template code
+    {% block content %}
+  File "/home/usuario/webscanner/templates/index.html", line 51, in block 'content'
+    {% for i, item in enumerate(scan.flow) %}
+    ^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'enumerate' is undefined
+2025-07-08 13:44:35,391 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 13:45:51,097 - INFO - app - Aplicación iniciada
+2025-07-08 13:45:53,495 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 53, in index
+    return render_template(
+        'index.html',
+    ...<3 lines>...
+        enumerate=enumerate
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/usuario/webscanner/templates/base.html", line 73, in top-level template code
+    {% block content %}
+  File "/home/usuario/webscanner/templates/index.html", line 78, in block 'content'
+    <a href="{{ url_for('scan_web.report', scan_id=scan.id) }}" class="btn btn-sm btn-info">Informe</a>
+    ^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'scan_web.report' with values ['scan_id']. Did you mean 'scan_web.index' instead?
+2025-07-08 13:45:53,500 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 13:46:06,508 - INFO - app - Aplicación iniciada
+2025-07-08 13:46:08,413 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 53, in index
+    return render_template(
+        'index.html',
+    ...<3 lines>...
+        enumerate=enumerate
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/usuario/webscanner/templates/base.html", line 73, in top-level template code
+    {% block content %}
+  File "/home/usuario/webscanner/templates/index.html", line 78, in block 'content'
+    <a href="{{ url_for('scan_web.report', scan_id=scan.id) }}" class="btn btn-sm btn-info">Informe</a>
+    ^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'scan_web.report' with values ['scan_id']. Did you mean 'scan_web.index' instead?
+2025-07-08 13:46:08,416 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 13:51:17,579 - INFO - app - Aplicación iniciada
+2025-07-08 13:51:20,626 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 53, in index
+    return render_template(
+        'index.html',
+    ...<3 lines>...
+        enumerate=enumerate
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/usuario/webscanner/templates/base.html", line 73, in top-level template code
+    {% block content %}
+  File "/home/usuario/webscanner/templates/index.html", line 78, in block 'content'
+    <a href="{{ url_for('reports.report', scan_id=scan.id) }}" class="btn btn-sm btn-info">Informe</a>
+    ^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'reports.report' with values ['scan_id']. Did you mean 'reports.show_report' instead?
+2025-07-08 13:51:20,632 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 13:52:53,522 - INFO - app - Aplicación iniciada
+2025-07-08 13:52:56,991 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 53, in index
+    return render_template(
+        'index.html',
+    ...<3 lines>...
+        enumerate=enumerate
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/usuario/webscanner/templates/base.html", line 73, in top-level template code
+    {% block content %}
+  File "/home/usuario/webscanner/templates/index.html", line 78, in block 'content'
+    <a href="{{ url_for('bp_reports.report', scan_id=scan.id) }}" class="btn btn-sm btn-info">Informe</a>
+    ^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'bp_reports.report' with values ['scan_id']. Did you mean 'reports.show_report' instead?
+2025-07-08 13:52:56,997 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 13:54:44,984 - INFO - app - Aplicación iniciada
+2025-07-08 13:54:47,517 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 53, in index
+    return render_template(
+        'index.html',
+    ...<3 lines>...
+        enumerate=enumerate
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/usuario/webscanner/templates/base.html", line 73, in top-level template code
+    {% block content %}
+  File "/home/usuario/webscanner/templates/index.html", line 79, in block 'content'
+    <a href="{{ url_for('scan_web.delete_scan', scan_id=scan.id) }}" class="btn btn-sm btn-danger" onclick="return confirm('¿Confirma eliminar este escaneo?');">Eliminar</a>
+    ^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'scan_web.delete_scan' with values ['scan_id']. Did you mean 'scan_api.delete_scan' instead?
+2025-07-08 13:54:47,524 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 13:56:14,386 - INFO - app - Aplicación iniciada
+2025-07-08 13:56:47,194 - ERROR - app - Exception on /new_scan [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 70, in new_scan
+    data = json.load(mf)
+  File "/usr/lib/python3.13/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-07-08 13:56:47,199 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/new_scan - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 13:58:40,467 - ERROR - app - Exception on /new_scan [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 70, in new_scan
+    data = json.load(mf)
+  File "/usr/lib/python3.13/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-07-08 13:58:40,469 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/new_scan - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 14:01:42,203 - INFO - app - Aplicación iniciada
+2025-07-08 14:01:44,812 - ERROR - app - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 53, in index
+    return render_template(
+        'index.html',
+    ...<3 lines>...
+        enumerate=enumerate
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/usuario/webscanner/templates/base.html", line 73, in top-level template code
+    {% block content %}
+  File "/home/usuario/webscanner/templates/index.html", line 82, in block 'content'
+    <a href="{{ url_for('scan_web.delete_scan', scan_id=scan.id) }}" class="btn btn-sm btn-danger">Eliminar</a>
+    ^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'scan_web.delete_scan' with values ['scan_id']. Did you mean 'scan_api.delete_scan' instead?
+2025-07-08 14:01:44,819 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 14:15:55,434 - INFO - app - Aplicación iniciada
+2025-07-08 14:25:09,560 - INFO - app - Aplicación iniciada
+2025-07-08 14:43:21,257 - ERROR - app - Exception on /new_scan [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 69, in new_scan
+    data = json.load(mf)
+  File "/usr/lib/python3.13/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-07-08 14:43:21,263 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/new_scan - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 14:43:24,678 - ERROR - app - Exception on /new_scan [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 69, in new_scan
+    data = json.load(mf)
+  File "/usr/lib/python3.13/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-07-08 14:43:24,680 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/new_scan - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 14:44:08,521 - INFO - app - Aplicación iniciada
+2025-07-08 14:44:23,195 - ERROR - app - Exception on /new_scan [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 69, in new_scan
+    data = json.load(mf)
+  File "/usr/lib/python3.13/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-07-08 14:44:23,198 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/new_scan - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-08 14:47:45,872 - INFO - app - Aplicación iniciada
+2025-07-08 14:48:24,063 - INFO - app - Aplicación iniciada
+2025-07-08 14:58:37,673 - INFO - app - Aplicación iniciada
+2025-07-09 07:31:59,732 - INFO - app - Aplicación iniciada
+2025-07-09 07:32:09,441 - ERROR - app - Exception on /new_scan [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/scan_web.py", line 69, in new_scan
+    data = json.load(mf)
+  File "/usr/lib/python3.13/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-07-09 07:32:09,447 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/new_scan - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-09 07:47:08,432 - INFO - app - Aplicación iniciada
+2025-07-09 07:47:14,542 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/static/scan_manager.js
+2025-07-09 07:53:28,550 - INFO - app - Aplicación iniciada
+2025-07-09 08:09:24,785 - INFO - app - Aplicación iniciada
+2025-07-09 08:11:35,509 - INFO - app - Aplicación iniciada
+2025-07-09 08:15:32,442 - INFO - app - Aplicación iniciada
+2025-07-09 08:24:30,333 - INFO - app - Aplicación iniciada
+2025-07-09 08:30:21,550 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/scans
+2025-07-09 08:30:57,917 - INFO - app - Aplicación iniciada
+2025-07-09 08:31:29,005 - INFO - app - Aplicación iniciada
+2025-07-09 08:33:11,469 - INFO - app - Aplicación iniciada
+2025-07-09 08:34:31,309 - INFO - app - Aplicación iniciada
+2025-07-09 08:38:16,731 - INFO - app - Aplicación iniciada
+2025-07-09 09:15:58,484 - INFO - app - Aplicación iniciada
+2025-07-09 09:36:01,803 - INFO - app - Aplicación iniciada
+2025-07-09 09:43:46,274 - INFO - app - Aplicación iniciada
+2025-07-09 09:45:35,429 - INFO - app - Aplicación iniciada
+2025-07-09 09:46:53,341 - INFO - app - Aplicación iniciada
+2025-07-09 10:01:34,847 - INFO - app - Aplicación iniciada
+2025-07-09 10:04:24,350 - INFO - app - Aplicación iniciada
+2025-07-09 10:05:27,199 - INFO - app - Aplicación iniciada
+2025-07-09 10:05:44,555 - INFO - app - Aplicación iniciada
+2025-07-09 10:17:18,446 - INFO - app - Aplicación iniciada
+2025-07-09 10:17:42,749 - INFO - app - Aplicación iniciada
+2025-07-09 10:17:45,705 - ERROR - app - Exception on /vpn_profiles/ [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/vpn_profiles.py", line 22, in list_profiles
+    return render_template('vpn_profiles.html', profiles=profiles)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/vpn_profiles.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/usuario/webscanner/templates/base.html", line 77, in top-level template code
+    {% block content %}
+  File "/home/usuario/webscanner/templates/vpn_profiles.html", line 8, in block 'content'
+    <a href="{{ url_for('vpn_profiles.new_profile') }}" class="btn btn-primary">Nuevo Perfil</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'vpn_profiles.new_profile'. Did you mean 'vpn_profiles.edit_profile' instead?
+2025-07-09 10:17:45,717 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/vpn_profiles/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-09 10:21:16,774 - ERROR - app - Exception on /vpn_profiles/ [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/vpn_profiles.py", line 22, in list_profiles
+    return render_template('vpn_profiles.html', profiles=profiles)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/usuario/webscanner/templates/vpn_profiles.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/usuario/webscanner/templates/base.html", line 77, in top-level template code
+    {% block content %}
+  File "/home/usuario/webscanner/templates/vpn_profiles.html", line 8, in block 'content'
+    <a href="{{ url_for('vpn_profiles.new_profile') }}" class="btn btn-primary">Nuevo Perfil</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'vpn_profiles.new_profile'. Did you mean 'vpn_profiles.edit_profile' instead?
+2025-07-09 10:21:16,777 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/vpn_profiles/ - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-09 10:24:28,251 - INFO - app - Aplicación iniciada
+2025-07-09 10:24:39,034 - ERROR - app - Exception on /vpn_profiles/new [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/vpn_profiles.py", line 96, in new_profile
+    return render_template('vpn_profile_new.html')
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: vpn_profile_new.html
+2025-07-09 10:24:39,039 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/vpn_profiles/new - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-09 10:47:15,713 - INFO - app - Aplicación iniciada
+2025-07-09 10:47:26,034 - ERROR - app - Exception on /vpn_profiles/new [GET]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/vpn_profiles.py", line 96, in new_profile
+    return render_template('vpn_profile_new.html')
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: vpn_profile_new.html
+2025-07-09 10:47:26,037 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/vpn_profiles/new - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-09 10:49:08,756 - INFO - app - Aplicación iniciada
+2025-07-09 11:15:09,245 - INFO - app - Aplicación iniciada
+2025-07-09 11:33:24,931 - INFO - app - Aplicación iniciada
+2025-07-09 11:43:01,147 - INFO - app - Aplicación iniciada
+2025-07-09 11:45:34,826 - ERROR - app - Exception on /vpn_profiles/upload [POST]
+Traceback (most recent call last):
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/usuario/webscanner/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/usuario/webscanner/routes/vpn_profiles.py", line 121, in upload_profile
+    filename = secure_filename(file.filename)
+               ^^^^^^^^^^^^^^^
+NameError: name 'secure_filename' is not defined
+2025-07-09 11:45:34,831 - ERROR - app - 500 Internal Server Error: http://127.0.0.1:8000/vpn_profiles/upload - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-07-09 11:51:16,531 - INFO - app - Aplicación iniciada
+2025-07-09 11:57:44,554 - INFO - app - Aplicación iniciada
+2025-07-09 12:25:53,319 - INFO - app - Aplicación iniciada
+2025-07-09 12:39:20,601 - INFO - app - Aplicación iniciada
+2025-07-09 12:44:12,226 - INFO - app - Aplicación iniciada
+2025-07-09 12:51:48,827 - INFO - app - Aplicación iniciada
+2025-07-09 13:46:14,280 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-14 18:16:10,563 - INFO - app - Aplicación iniciada
+2025-07-15 12:29:05,229 - INFO - app - Aplicación iniciada

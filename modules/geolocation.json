@@ -1,0 +1,22 @@
+{
+  "name": "ip_geolocation",
+  "description": "Obtiene la geolocalizaci\u00f3n aproximada de una IP",
+  "command": "python3",
+  "arguments": [
+    "scripts/geoip_lookup.py",
+    "{target}"
+  ],
+  "params": {},
+  "authentication": {
+    "GEOIP_API_KEY": "ENV"
+  },
+  "env": {},
+  "output": {
+    "path": "results/geoip_{target}.txt",
+    "format": "text"
+  },
+  "help": "https://ipinfo.io/developers",
+  "icon_color": "#20c997",
+  "enabled": true,
+  "icon": "fa-map-marker-alt"
+}

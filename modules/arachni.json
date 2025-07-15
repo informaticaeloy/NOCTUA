@@ -1,0 +1,26 @@
+{
+  "name": "arachni_scan",
+  "description": "Escaneo de seguridad web con Arachni",
+  "command": "arachni",
+  "params": {
+    "default": [],
+    "aggressiveness": {
+      "10": [
+        "--audit-links",
+        "--audit-forms",
+        "--audit-cookies"
+      ]
+    }
+  },
+  "arguments": [
+    "{target}"
+  ],
+  "output": {
+    "path": "results/arachni_{target}.txt",
+    "format": "text"
+  },
+  "icon_color": "#20c997",
+  "enabled": true,
+  "help": "https://github.com/Arachni/arachni",
+  "icon": "fa-spider"
+}

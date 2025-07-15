@@ -1,0 +1,22 @@
+{
+  "name": "nikto_scan",
+  "description": "Escaneo de vulnerabilidades web con Nikto",
+  "command": "nikto",
+  "params": {
+    "default": [
+      "-h"
+    ],
+    "aggressiveness": {}
+  },
+  "arguments": [
+    "{target}"
+  ],
+  "output": {
+    "path": "results/nikto_{target}.txt",
+    "format": "text"
+  },
+  "icon_color": "#dc3545",
+  "enabled": true,
+  "help": "https://cirt.net/Nikto2",
+  "icon": "fa-shield-halved"
+}

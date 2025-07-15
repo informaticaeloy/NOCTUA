@@ -1,0 +1,19 @@
+{
+  "name": "nslookup_query",
+  "description": "Consulta DNS mediante nslookup",
+  "command": "nslookup",
+  "params": {
+    "default": []
+  },
+  "arguments": [
+    "{target}"
+  ],
+  "output": {
+    "path": "results/nslookup_{target}.txt",
+    "format": "text"
+  },
+  "icon_color": "#6f42c1",
+  "enabled": true,
+  "help": "https://man7.org/linux/man-pages/man1/nslookup.1.html",
+  "icon": "fa-cube"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "wpscan",
+  "description": "Escaneo de vulnerabilidades en sitios WordPress usando WPScan.",
+  "command": "wpscan",
+  "params": {
+    "default": [
+      "--no-update",
+      "--disable-tls-checks"
+    ],
+    "aggressiveness": {
+      "1": [
+        "--enumerate",
+        "vp"
+      ],
+      "5": [
+        "--enumerate",
+        "vp,u"
+      ],
+      "10": [
+        "--enumerate",
+        "vp,vt,u,m"
+      ]
+    }
+  },
+  "arguments": [
+    "--url",
+    "{target}"
+  ],
+  "authentication": {},
+  "env": {},
+  "output": {
+    "path": "results/wpscan_{target}.txt",
+    "format": "text"
+  },
+  "help": "https://github.com/wpscanteam/wpscan",
+  "icon_color": "#d63384",
+  "enabled": true,
+  "icon": "fa-wordpress"
+}

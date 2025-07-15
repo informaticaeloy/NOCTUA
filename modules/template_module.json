@@ -1,0 +1,32 @@
+// Recuerda eliminar todos los comentarios, no están permitidos en JSON
+{
+  "name": "nombre_modulo",
+  "description": "Descripción breve del módulo y su función",
+  "command": "comando_base",                          // Ej: "ffuf", "nmap", "whois"
+  "params": {
+    "default": [                                      // Parámetros comunes o por defecto
+      "-t", "10"
+    ],
+    "aggressiveness": {                               // Opcional, params por nivel agresividad
+      "1": ["-p", "80"],
+      "5": ["-p", "80,443", "-v"],
+      "10": ["-p", "1-65535", "-v", "-O"]
+    },
+    "custom": []                                      // Parámetros adicionales inyectados si aplica
+  },
+  "arguments": ["argumento1", "argumento2"],          // Argumentos fijos o dinámicos (ej: target)
+  "authentication": {                                 // Opcional: usuario/pass para módulos que lo requieran
+    "user": "usuario",
+    "password": "contraseña"
+  },
+  "env": {                                            // Variables de entorno si aplica
+    "VAR_NAME": "valor"
+  },
+  "output": {                                         // Definición archivo o patrón de salida
+    "path": "ruta/archivo_salida.txt",
+    "format": "json"                                  // Opcional: formato esperado de salida
+  },
+  "help": "Texto o URL con documentación o ayuda para el módulo",
+  "icon_color": "#0d6efd",                            // Color para globito visual en UI
+  "enabled": true                                     // Para habilitar/deshabilitar módulo
+}

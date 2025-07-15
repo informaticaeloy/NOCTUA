@@ -1,0 +1,12 @@
+{
+  "id": "6ec96023-016a-4d27-a9cc-3f6257591622",
+  "target": "consorciodejabugo.com",
+  "modules": [
+    "010-public_ip",
+    "020-whois_lookup"
+  ],
+  "aggressiveness": 8,
+  "created_at": "2025-07-03T13:41:05.395207",
+  "status": "pendiente",
+  "progress": 0
+}

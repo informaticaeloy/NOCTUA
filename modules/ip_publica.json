@@ -1,0 +1,32 @@
+{
+  "name": "ip_publica",
+  "description": "Obtiene la direcci\u00f3n IP p\u00fablica del sistema",
+  "command": "curl",
+  "params": {
+    "default": [
+      "-s"
+    ],
+    "aggressiveness": {
+      "1": [
+        "-s"
+      ],
+      "5": [
+        "-s"
+      ],
+      "10": [
+        "-s"
+      ]
+    }
+  },
+  "arguments": [
+    "https://ifconfig.me"
+  ],
+  "output": {
+    "path": "results/ip_publica.txt",
+    "format": "text"
+  },
+  "help": "https://ifconfig.me",
+  "icon_color": "#198754",
+  "enabled": true,
+  "icon": "fa-location-dot"
+}

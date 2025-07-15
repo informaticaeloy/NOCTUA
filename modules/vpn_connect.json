@@ -1,0 +1,20 @@
+{
+  "name": "vpn_connect",
+  "description": "M\u00f3dulo para establecer conexi\u00f3n VPN usando OpenVPN",
+  "author": "TuNombre",
+  "version": "1.0",
+  "icon_color": "#007bff",
+  "script": "vpn_connect.py",
+  "type": "mod",
+  "timeout": 300,
+  "config": {
+    "vpn_config_file": "/etc/openvpn/client.ovpn",
+    "vpn_user": "usuario_vpn",
+    "vpn_password": "contrase\u00f1a_vpn"
+  },
+  "requirements": [
+    "openvpn"
+  ],
+  "run_command": "sudo openvpn --config {{vpn_config_file}} --auth-user-pass <(echo -e \"{{vpn_user}}\\n{{vpn_password}}\")",
+  "icon": "fa-cube"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "abuseipdb_check",
+  "description": "Reputaci\u00f3n IP con AbuseIPDB",
+  "command": "python3",
+  "arguments": [
+    "scripts/abuseipdb_lookup.py",
+    "{target}"
+  ],
+  "params": {},
+  "authentication": {
+    "ABUSEIPDB_API_KEY": "ENV"
+  },
+  "env": {},
+  "output": {
+    "path": "results/abuseipdb_{target}.txt",
+    "format": "text"
+  },
+  "help": "https://www.abuseipdb.com/api.html",
+  "icon_color": "#6610f2",
+  "enabled": true,
+  "icon": "fa-bug"
+}

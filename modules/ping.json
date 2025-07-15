@@ -1,0 +1,40 @@
+{
+  "name": "ping",
+  "description": "Comprobaci\u00f3n de disponibilidad de host mediante ping",
+  "command": "ping",
+  "params": {
+    "default": [
+      "-c",
+      "4"
+    ],
+    "aggressiveness": {
+      "1": [
+        "-c",
+        "2"
+      ],
+      "5": [
+        "-c",
+        "4"
+      ],
+      "10": [
+        "-c",
+        "10",
+        "-i",
+        "0.2"
+      ]
+    }
+  },
+  "arguments": [
+    "{target}"
+  ],
+  "authentication": {},
+  "env": {},
+  "output": {
+    "path": "results/ping_{target}.txt",
+    "format": "text"
+  },
+  "help": "https://linux.die.net/man/8/ping",
+  "icon_color": "#0d6efd",
+  "enabled": true,
+  "icon": "fa-wave-square"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "droopescan",
+  "description": "Enumeraci\u00f3n de CMS Drupal y otros, utilizando Droopescan.",
+  "command": "droopescan",
+  "params": {
+    "default": [
+      "scan"
+    ],
+    "aggressiveness": {
+      "1": [],
+      "5": [
+        "--enumerate"
+      ],
+      "10": [
+        "--enumerate",
+        "--threads",
+        "10"
+      ]
+    }
+  },
+  "arguments": [
+    "drupal",
+    "-u",
+    "{target}"
+  ],
+  "authentication": {},
+  "env": {},
+  "output": {
+    "path": "results/droopescan_{target}.txt",
+    "format": "text"
+  },
+  "help": "https://github.com/droope/droopescan",
+  "icon_color": "#20c997",
+  "enabled": true,
+  "icon": "fa-search"
+}

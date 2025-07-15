@@ -1,0 +1,35 @@
+{
+  "name": "nuclei_scan",
+  "description": "Escaneo de vulnerabilidades mediante Nuclei",
+  "command": "nuclei",
+  "params": {
+    "default": [
+      "-u"
+    ],
+    "aggressiveness": {
+      "1": [
+        "-severity",
+        "low"
+      ],
+      "5": [
+        "-severity",
+        "medium"
+      ],
+      "10": [
+        "-severity",
+        "high,critical"
+      ]
+    }
+  },
+  "arguments": [
+    "{target}"
+  ],
+  "output": {
+    "path": "results/nuclei_{target}.txt",
+    "format": "text"
+  },
+  "icon_color": "#6610f2",
+  "enabled": true,
+  "help": "https://nuclei.projectdiscovery.io",
+  "icon": "fa-bolt"
+}

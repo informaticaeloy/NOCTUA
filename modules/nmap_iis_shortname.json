@@ -1,0 +1,13 @@
+{
+  "name": "nmap_iis_shortname",
+  "description": "Nmap con script http-iis-short-name-brute para detectar vulnerabilidad en nombres cortos en IIS.",
+  "type": "command",
+  "icon": "fa-network-wired",
+  "icon_color": "#6610f2",
+  "command": "nmap",
+  "arguments": 
+   ["-p", "80,443", "--script=http-iis-short-name-brute","{target}"],
+  "output": {
+    "path": "results/nmap_iis_shortname_{target}.txt"
+  }
+}

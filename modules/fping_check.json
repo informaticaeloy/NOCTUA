@@ -1,0 +1,26 @@
+{
+  "name": "fping_check",
+  "description": "Comprobación rápida de disponibilidad de host mediante fping.",
+  "type": "command",
+  "icon": "fa-bolt",
+  "icon_color": "#0dcaf0",
+  "command": "fping",
+  "params": {
+    "default": [
+      "-c", "3",
+      "-q"
+    ],
+    "aggressiveness": {
+      "1": ["-c", "1", "-q"],
+      "5": ["-c", "3", "-q"],
+      "10": ["-c", "5", "-q"]
+    }
+  },
+  "arguments": ["{target}"],
+  "output": {
+    "path": "results/fping_{target}.txt",
+    "format": "text"
+  },
+  "help": "https://linux.die.net/man/8/fping",
+  "enabled": true
+}

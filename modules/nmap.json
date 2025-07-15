@@ -1,0 +1,48 @@
+{
+  "name": "nmap",
+  "description": "Descubrimiento de puertos y servicios",
+  "command": "comando_base",
+  "params": {
+    "default": [
+      "-t",
+      "10"
+    ],
+    "aggressiveness": {
+      "1": [
+        "-p",
+        "80"
+      ],
+      "5": [
+        "-p",
+        "80,443",
+        "-v"
+      ],
+      "10": [
+        "-p",
+        "1-65535",
+        "-v",
+        "-O"
+      ]
+    },
+    "custom": []
+  },
+  "arguments": [
+    "argumento1",
+    "argumento2"
+  ],
+  "authentication": {
+    "user": "usuario",
+    "password": "contrase\u00f1a"
+  },
+  "env": {
+    "VAR_NAME": "valor"
+  },
+  "output": {
+    "path": "ruta/archivo_salida.txt",
+    "format": "json"
+  },
+  "help": "Texto o URL con documentaci\u00f3n o ayuda para el m\u00f3dulo",
+  "icon_color": "#0d6efd",
+  "enabled": true,
+  "icon": "fa-network-wired"
+}

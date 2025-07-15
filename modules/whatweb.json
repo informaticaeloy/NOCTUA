@@ -1,0 +1,40 @@
+{
+  "name": "whatweb_scan",
+  "description": "Detecci\u00f3n de tecnolog\u00edas y software en sitios web con WhatWeb",
+  "command": "whatweb",
+  "params": {
+    "default": [
+      "--log-verbose"
+    ],
+    "aggressiveness": {
+      "1": [
+        "--no-errors",
+        "--color=never"
+      ],
+      "5": [
+        "--aggression",
+        "2",
+        "--color=never"
+      ],
+      "10": [
+        "--aggression",
+        "5",
+        "--color=never",
+        "--log-debug"
+      ]
+    }
+  },
+  "arguments": [
+    "http://target_website"
+  ],
+  "authentication": {},
+  "env": {},
+  "output": {
+    "path": "results/whatweb_{target}.json",
+    "format": "json"
+  },
+  "help": "https://github.com/urbanadventurer/WhatWeb/wiki",
+  "icon_color": "#fd7e14",
+  "enabled": true,
+  "icon": "fa-search"
+}

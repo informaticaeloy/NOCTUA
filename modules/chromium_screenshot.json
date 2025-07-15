@@ -1,0 +1,47 @@
+{
+  "name": "web_screenshot",
+  "description": "Captura de pantalla de la p\u00e1gina web objetivo usando Chromium headless",
+  "command": "chromium",
+  "params": {
+    "default": [
+      "--headless",
+      "--disable-gpu",
+      "--window-size=1280,720",
+      "--screenshot=results/screenshot_{target}.png"
+    ],
+    "aggressiveness": {
+      "1": [
+        "--headless",
+        "--disable-gpu",
+        "--window-size=640,480",
+        "--screenshot=results/screenshot_{target}.png"
+      ],
+      "5": [
+        "--headless",
+        "--disable-gpu",
+        "--window-size=1280,720",
+        "--screenshot=results/screenshot_{target}.png"
+      ],
+      "10": [
+        "--headless",
+        "--disable-gpu",
+        "--window-size=1920,1080",
+        "--screenshot=results/screenshot_{target}.png",
+        "--hide-scrollbars"
+      ]
+    }
+  },
+  "arguments": [
+    "https://{target}"
+  ],
+  "authentication": {},
+  "env": {},
+  "output": {
+    "path": "results/screenshot_{target}.png",
+    "format": "image"
+  },
+  "help": "https://www.chromium.org/developers/how-tos/run-chromium-headless",
+  "icon_color": "#17a2b8",
+  "enabled": true,
+  "icon": "fa-camera"
+}

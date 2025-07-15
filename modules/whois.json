@@ -1,0 +1,35 @@
+{
+  "name": "whois_lookup",
+  "description": "Consulta de informaci\u00f3n WHOIS para un dominio o IP",
+  "command": "whois",
+  "params": {
+    "default": [],
+    "aggressiveness": {
+      "1": [
+        "--verbose"
+      ],
+      "5": [
+        "--verbose",
+        "--raw"
+      ],
+      "10": [
+        "--verbose",
+        "--raw",
+        "--debug"
+      ]
+    }
+  },
+  "arguments": [
+    "target_domain_or_ip"
+  ],
+  "authentication": {},
+  "env": {},
+  "output": {
+    "path": "results/whois_{target}.txt",
+    "format": "text"
+  },
+  "help": "https://linux.die.net/man/1/whois",
+  "icon_color": "#0dcaf0",
+  "enabled": true,
+  "icon": "fa-user-secret"
+}

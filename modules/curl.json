@@ -1,0 +1,41 @@
+{
+  "name": "curl_request",
+  "description": "Realiza peticiones HTTP con curl y captura la respuesta",
+  "command": "curl",
+  "params": {
+    "default": [
+      "-I"
+    ],
+    "aggressiveness": {
+      "1": [
+        "-I",
+        "--max-time",
+        "5"
+      ],
+      "5": [
+        "-L",
+        "--max-time",
+        "10"
+      ],
+      "10": [
+        "-L",
+        "-v",
+        "--max-time",
+        "20"
+      ]
+    }
+  },
+  "arguments": [
+    "http://target"
+  ],
+  "authentication": {},
+  "env": {},
+  "output": {
+    "path": "results/curl_{target}.txt",
+    "format": "text"
+  },
+  "help": "https://curl.se/docs/manpage.html",
+  "icon_color": "#6610f2",
+  "enabled": true,
+  "icon": "fa-cloud-arrow-down"
+}

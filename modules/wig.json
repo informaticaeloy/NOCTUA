@@ -1,0 +1,19 @@
+{
+  "name": "wig_fingerprint",
+  "description": "Fingerprinting de tecnolog\u00edas web con wig",
+  "command": "wig",
+  "params": {
+    "default": []
+  },
+  "arguments": [
+    "{target}"
+  ],
+  "output": {
+    "path": "results/wig_{target}.txt",
+    "format": "text"
+  },
+  "icon_color": "#fd7e14",
+  "enabled": true,
+  "help": "https://github.com/jekyc/wig",
+  "icon": "fa-puzzle-piece"
+}

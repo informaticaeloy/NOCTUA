@@ -1,0 +1,48 @@
+{
+  "name": "ffuf_fuzz",
+  "description": "Fuzzing de URLs y par\u00e1metros HTTP con ffuf",
+  "command": "ffuf",
+  "params": {
+    "default": [
+      "-w",
+      "wordlist.txt",
+      "-u",
+      "http://target/FUZZ"
+    ],
+    "aggressiveness": {
+      "1": [
+        "-t",
+        "10",
+        "-c"
+      ],
+      "5": [
+        "-t",
+        "50",
+        "-c",
+        "-mc",
+        "200,204,301"
+      ],
+      "10": [
+        "-t",
+        "100",
+        "-c",
+        "-mc",
+        "200,204,301",
+        "-v"
+      ]
+    }
+  },
+  "arguments": [
+    "target"
+  ],
+  "authentication": {},
+  "env": {},
+  "output": {
+    "path": "results/ffuf_{target}.json",
+    "format": "json"
+  },
+  "help": "https://github.com/ffuf/ffuf#usage",
+  "icon_color": "#198754",
+  "enabled": true,
+  "icon": "fa-folder-tree"
+}

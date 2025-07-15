@@ -1,0 +1,32 @@
+{
+  "name": "joomscan",
+  "description": "Escaneo de vulnerabilidades en sitios Joomla! usando OWASP JoomScan.",
+  "command": "joomscan",
+  "params": {
+    "default": [],
+    "aggressiveness": {
+      "1": [],
+      "5": [
+        "--enumerate"
+      ],
+      "10": [
+        "--enumerate",
+        "--random-agent"
+      ]
+    }
+  },
+  "arguments": [
+    "-u",
+    "{target}"
+  ],
+  "authentication": {},
+  "env": {},
+  "output": {
+    "path": "results/joomscan_{target}.txt",
+    "format": "text"
+  },
+  "help": "https://github.com/OWASP/joomscan",
+  "icon_color": "#fd7e14",
+  "enabled": true,
+  "icon": "fa-joomla"
+}

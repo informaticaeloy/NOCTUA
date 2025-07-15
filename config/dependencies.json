@@ -1,0 +1,11 @@
+{
+  "ping": ["ping", "-V"],
+  "chromium": ["chromium", "--version"],
+  "firefox": ["firefox", "--version"],
+  "curl": ["curl", "-V"],
+  "ffuf": ["ffuf", "-V"],
+  "whatweb": ["whatweb", "--version"],
+  "whois": ["whois", "--version"],
+  "nmap": ["nmap", "--version"],
+  "S.O.": ["lsb_release", "-a"]
+}
