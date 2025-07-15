@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}Escaneos Activos{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h2>Escaneos Activos</h2>
+  <a href="{{ url_for('scan_web.new_scan') }}" class="btn btn-primary">Nuevo Escaneo</a>
+</div>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <div>
+      {% for category, message in messages %}
+        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+          {{ message }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+
+<div id="scans-table-wrapper">
+  <table id="scans-table" class="table table-striped table-bordered align-middle">
+    <thead class="table-light">
+      <tr>
+        <th>Fecha</th>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Dominio / IP</th>
+        <th>Descripción</th>
+        <th>Flujo</th>
+        <th>Agresividad</th>
+        <th>Estado</th>
+        <th>Progreso</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- VACÍO, se rellena por JS -->
+    </tbody>
+  </table>
+</div>
+
+<script>
+  window.modules_info = {{ modules_info|tojson }};
+  window.scripts_info = {{ scripts_info|tojson }};
+</script>
+
+{% endblock %}
+
+

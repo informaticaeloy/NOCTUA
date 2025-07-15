@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+
+{% block title %}Informe de Escaneo - {{ scan_name }}{% endblock %}
+
+{% block content %}
+<h1 class="mb-3">{{ scan_name }}</h1>
+
+<div class="mb-3">
+    <p><strong>Target:</strong> {{ target }}</p>
+    <p><strong>Agresividad:</strong> {{ aggressiveness }}</p>
+
+    <div class="mb-3 mx-auto" style="max-width: 600px;">
+
+</div>
+        <!--  ===== BARRA DE LEDS PARA LA AGRESIVIDAD -->
+
+<div class="mb-3" style="max-width: 600px; text-align: left;">
+  <div class="led-bar d-flex gap-1 justify-content-start mt-1" style="user-select:none;">
+    {% for i in range(10) %}
+      <div class="led-segment {% if i < aggressiveness|int %}lit{% endif %}" data-index="{{ i }}"></div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .led-bar {
+    height: 20px;
+  }
+  .led-segment {
+    flex: 1;
+    height: 100%;
+    background: #ddd;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  .led-segment.lit {
+    /* Se colorea con JS */
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const leds = document.querySelectorAll('.led-segment.lit');
+    leds.forEach((led) => {
+      const index = parseInt(led.getAttribute('data-index'));
+      if (index <= 4) {
+        led.style.backgroundColor = '#28a745'; // verde
+      } else if (index <= 6) {
+        led.style.backgroundColor = '#ffc107'; // amarillo
+      } else {
+        led.style.backgroundColor = '#dc3545'; // rojo
+      }
+    });
+  });
+</script>
+
+
+
+<!-- ===== FIN DE BARRA DE LEDS PARA LA AGRESIVIDAD -->
+<div class="mb-3">
+    <p><strong>Fecha de inicio:</strong> {{ scan_date }}</p>
+    <p><strong>Fecha de fin:</strong> {{ scan_end }}</p>
+    <p><strong>Descripción:</strong> {{ description }}</p>
+</div>
+
+<hr>
+<!--
+<h4>Módulos ejecutados:</h4>
+<div class="mb-4">
+    {% for mod in modules %}
+        <span class="badge bg-primary me-1">{{ mod }}</span>
+    {% endfor %}
+</div>
+-->
+
+<h4>Módulos ejecutados:</h4>
+<div class="d-flex align-items-center flex-wrap mb-4 gap-3">
+  {% for mod in modules %}
+    <div class="text-center">
+      <div class="badge bg-primary px-3 py-2">{{ mod }}</div>
+      <div class="small text-muted mt-1">
+        {% set fecha = '' %}
+        {% for bloque in modules_results if bloque.modulo == mod and bloque.ejecuciones %}
+          {% set fecha = bloque.ejecuciones[0].timestamp_inicio %}
+        {% endfor %}
+        {{ fecha }}
+      </div>
+    </div>
+
+    {% if not loop.last %}
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-arrow-right fa-lg text-secondary"></i>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+
+
+<h4>Resultados:</h4>
+
+<div class="accordion" id="accordionModules">
+    {% for resultado in modules_results %}
+        {% set parent_index = loop.index %}
+        {% for ejecucion in resultado.ejecuciones %}
+            {% set unique_id = 'mod_' ~ loop.index ~ '_' ~ parent_index %}
+            <div class="accordion-item mb-2">
+                <h2 class="accordion-header" id="heading_{{ unique_id }}">
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse_{{ unique_id }}"
+                        aria-expanded="false"
+                        aria-controls="collapse_{{ unique_id }}">
+                        {{ ejecucion.modulo }} – {{ ejecucion.timestamp_inicio }} → {{ ejecucion.timestamp_fin }}
+                    </button>
+                </h2>
+                <div
+                    id="collapse_{{ unique_id }}"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading_{{ unique_id }}">
+                    <div class="accordion-body">
+                        <pre>
+                            <strong>[Comando ejecutado]</strong>
+                                {{ ejecucion.comando }}
+                            <strong>[Salida]</strong>
+                                {{ ejecucion.salida }}
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endfor %}
+</div>
+
+
+
+{% endblock %}
+
+

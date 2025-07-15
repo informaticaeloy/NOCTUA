@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Listado de Módulos{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Módulos disponibles</h1>
+
+<div class="row">
+  {% for mod in modules %}
+    <div class="col-md-6 mb-3">
+      <div class="card border-{{ 'success' if mod.enabled else 'secondary' }}">
+        <div class="card-body">
+          <h5 class="card-title">
+            <span class="badge" style="background-color: {{ mod.icon_color }}">{{ mod.name }}</span>
+          </h5>
+          <p class="card-text text-muted">{{ mod.description }}</p>
+          <p class="small">
+            <strong>Comando:</strong> <code>{{ mod.command }}</code><br>
+            <strong>Estado:</strong> {{ 'Activo' if mod.enabled else 'Desactivado' }}
+          </p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

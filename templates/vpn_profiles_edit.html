@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Editar Perfil VPN - {{ profile_name }}{% endblock %}
+
+{% block content %}
+<h2>Editar Perfil VPN: {{ profile_name }}</h2>
+
+<form method="post">
+  <div class="mb-3">
+    <textarea class="form-control" name="content" rows="20" style="font-family: monospace;">{{ content }}</textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Guardar</button>
+  <a href="{{ url_for('vpn_profiles.list_profiles') }}" class="btn btn-secondary">Cancelar</a>
+</form>
+{% endblock %}

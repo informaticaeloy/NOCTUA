@@ -1,0 +1,25 @@
+{
+  "name": "dns_enum",
+  "description": "Consulta de registros DNS del objetivo",
+  "command": "python3",
+  "python_file": "dns_enum.py",
+  "params": {
+    "default": [],
+    "aggressiveness": {
+      "1": [],
+      "5": [],
+      "10": []
+    }
+  },
+  "arguments": [
+    "{target}",
+    "{aggressiveness}"
+  ],
+  "output": {
+    "path": "results/dns_{target}.txt",
+    "format": "text"
+  },
+  "icon_color": "#6610f2",
+  "enabled": true,
+  "icon": "fa-globe"
+}

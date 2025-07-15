@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}Perfiles VPN{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-2" style="gap: 0.5rem; align-items: center;">
+  <h2 class="mb-0">Perfiles VPN</h2>
+  <form method="POST" action="{{ url_for('vpn_profiles.upload_profile') }}" enctype="multipart/form-data" class="d-flex gap-2 align-items-center" style="white-space: nowrap;">
+    <input type="file" name="profile" accept=".ovpn" required class="form-control form-control-sm" style="max-width: 220px;">
+    <button type="submit" class="btn btn-primary btn-sm" style="white-space: nowrap;">Subir Perfil</button>
+  </form>
+</div>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+      <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+      </div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+<table class="table table-bordered table-hover align-middle">
+  <thead class="table-light">
+    <tr>
+      <th>Nombre</th>
+      <th>Host</th>
+      <th>Protocolo</th>
+      <th>Dispositivo</th>
+      <th>Cifrado</th>
+      <th>Autenticación</th>
+      <th>Estado</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for profile in profiles %}
+    <tr>
+      <td>{{ profile.name }}</td>
+      <td>{{ profile.info.remote or '-' }}</td>
+      <td>{{ profile.info.proto or '-' }}</td>
+      <td>{{ profile.info.dev or '-' }}</td>
+      <td>{{ profile.info.cipher or '-' }}</td>
+      <td>{{ profile.info.auth or '-' }}</td>
+      <td>
+        {% if profile.status == 'Activo' %}
+          <span class="badge bg-success">{{ profile.status }}</span>
+        {% elif profile.status == 'Inaccesible' %}
+          <span class="badge bg-danger">{{ profile.status }}</span>
+        {% else %}
+          <span class="badge bg-secondary">No comprobado</span>
+        {% endif %}
+        {% if profile.date %}
+          <div class="small text-muted">Última prueba: {{ profile.date }}</div>
+        {% endif %}
+      </td>
+      <td>
+        <form method="POST" action="{{ url_for('vpn_profiles.check_profile', profile_name=profile.name) }}" class="d-inline">
+          <button type="submit" class="btn btn-info btn-sm text-white" title="Comprobar conectividad">
+            <i class="bi bi-plug"></i>
+          </button>
+        </form>
+        <form method="POST" action="{{ url_for('vpn_profiles.delete_profile', profile_name=profile.name) }}" class="d-inline ms-1"
+              onsubmit="return confirm('¿Eliminar este perfil?')">
+          <button type="submit" class="btn btn-danger btn-sm" title="Eliminar perfil">
+            <i class="bi bi-trash-fill"></i>
+          </button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const forms = document.querySelectorAll('form[action*="/check/"]');
+
+    forms.forEach(form => {
+      form.addEventListener('submit', function(event) {
+        const btn = form.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        btn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>';
+      });
+    });
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,25 @@
+{
+  "name": "tls_info",
+  "description": "Informaci\u00f3n del certificado TLS del objetivo",
+  "command": "python3",
+  "python_file": "tls_info.py",
+  "arguments": [
+    "{target}",
+    "{aggressiveness}"
+  ],
+  "params": {
+    "default": [],
+    "aggressiveness": {
+      "1": [],
+      "5": [],
+      "10": []
+    }
+  },
+  "output": {
+    "path": "results/tls_{target}.txt",
+    "format": "text"
+  },
+  "icon_color": "#198754",
+  "enabled": true,
+  "icon": "fa-lock"
+}

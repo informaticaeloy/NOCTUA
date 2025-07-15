@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Error 404 - Página no encontrada{% endblock %}
+
+{% block content %}
+<div class="text-center mt-5">
+  <h1 class="display-1 text-danger">404</h1>
+  <h3>Página no encontrada</h3>
+  <p>Lo sentimos, la página que buscas no existe o fue movida.</p>
+  <a href="{{ url_for('scan_web.index') }}" class="btn btn-primary mt-3">Volver al Inicio</a>
+</div>
+{% endblock %}

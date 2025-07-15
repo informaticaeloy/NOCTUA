@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}Gestor de Escaneos{% endblock %}</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}" />
+
+  <!-- Colores resaltados en el RAW de los módulos -->
+  <!-- Prism.js CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
+  {% block head %}
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+  {% endblock %}
+</head>
+<body class="bg-light">
+
+<!--
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+  <div class="container d-flex justify-content-between">
+    <a class="navbar-brand" href="{{ url_for('scan_web.index') }}">Escaneos Web</a>
+    <div>
+      <a href="{{ url_for('status.status_check') }}" class="btn btn-outline-light">Ver estado del sistema</a>
+    </div>
+  </div>
+</nav>
+-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <!-- Botón: Escaneos Web -->
+    <a href="{{ url_for('scan_web.index') }}" class="btn btn-outline-light me-2">
+      <i class="fa-solid fa-spider me-2"></i>Escaneos Web
+    </a>
+
+    <div class="d-flex">
+
+      <!-- Botón: Perfiles VPN -->
+      <a href="{{ url_for('vpn_profiles.list_profiles') }}" class="btn btn-outline-light me-2">
+        <i class="fa-solid fa-lock me-2"></i>VPN Profiles
+      </a>
+      <!-- Botón: Scripts -->
+      <a href="{{ url_for('scripts.list_scripts') }}" class="btn btn-outline-light me-2">
+        <i class="fa-solid fa-code me-2"></i>Scripts
+      </a>
+
+      <!-- Botón: Módulos -->
+      <a href="{{ url_for('modules.list_modules') }}" class="btn btn-outline-light me-2">
+        <i class="fa-solid fa-puzzle-piece me-2"></i>Módulos
+      </a>
+
+      <!-- Botón: Estado del sistema -->
+      <a href="{{ url_for('status.status_check') }}" class="btn btn-outline-light">
+        <i class="fa-solid fa-heart-pulse me-2"></i>Estado del sistema
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+<!--                                        -->
+<div class="container">
+  {% block content %}
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div>
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+  {% endblock %}
+</div>
+
+<!-- Bootstrap JS + Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+{% block scripts %}
+<!-- DataTables JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<script src="{{ url_for('static', filename='js/scan_manager.js') }}"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const tooltipTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  tooltipTriggerList.forEach(el => {
+    new bootstrap.Tooltip(el);
+  });
+});
+</script>
+{% endblock %}
+
+<!-- Colores resaltados en el RAW de los módulos -->
+<!-- Prism.js -->
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-json.min.js"></script>
+
+</body>
+</html>

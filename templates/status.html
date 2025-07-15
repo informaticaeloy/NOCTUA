@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}Estado del Sistema{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Estado del Sistema</h1>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-hover align-middle">
+    <thead class="table-primary">
+      <tr>
+        <th>Herramienta</th>
+        <th>Ruta</th>
+        <th>Versión</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for tool, info in status.items() %}
+        <tr class="{{ 'bg-available' if info.available else 'bg-unavailable' }}">
+          <td class="text-capitalize">{{ tool }}</td>
+          <td><code>{{ info.path or 'No encontrada' }}</code></td>
+          <td>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              {% if info.version_full != info.version_short %}
+                <button class="btn btn-sm btn-light toggle-version p-0" aria-label="Expandir versión" data-tool="{{ tool }}" style="border:none; background:none;">
+                  <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 5.646a.5.5 0 0 1 .708 0L8 11.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </button>
+              {% else %}
+                <span style="width:16px; display:inline-block;"></span>
+              {% endif %}
+              <span class="version-short">{{ info.version_short }}</span>
+            </div>
+            {% if info.version_full != info.version_short %}
+              <pre class="version-full mt-2" id="version-{{ tool }}" style="display:none; white-space: pre-wrap;">{{ info.version_full }}</pre>
+            {% endif %}
+          </td>
+          <td>
+            <span class="badge {{ 'bg-success' if info.available else 'bg-danger' }}">
+              {{ 'Disponible' if info.available else 'No disponible' }}
+            </span>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<script>
+  document.querySelectorAll('.toggle-version').forEach(button => {
+    button.addEventListener('click', () => {
+      const tool = button.getAttribute('data-tool');
+      const pre = document.getElementById('version-' + tool);
+      const arrow = button.querySelector('.arrow-icon');
+      if (pre.style.display === 'none') {
+        pre.style.display = 'block';
+        arrow.style.transform = 'rotate(180deg)'; // flecha arriba
+      } else {
+        pre.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)'; // flecha abajo
+      }
+    });
+  });
+</script>
+
+{% endblock %}

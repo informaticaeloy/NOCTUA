@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block title %}Listado de Scripts{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Scripts disponibles</h1>
+
+<div class="row">
+  {% for script in scripts %}
+    <div class="col-md-6 mb-3">
+      <div class="card {% if not script.compatible %}bg-danger bg-opacity-10{% else %}border-{{ 'success' if script.enabled else 'secondary' }}{% endif %}">
+        <div class="card-body d-flex align-items-center justify-content-between">
+          <!-- Switch activación -->
+          <div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="switch_{{ script.name }}" {% if script.enabled %}checked{% endif %} {% if not script.compatible %}disabled{% endif %}>
+            </div>
+          </div>
+
+          <!-- Globito nombre + color + etiqueta Erróneo -->
+          <div class="flex-grow-1 ms-3">
+            <h5 class="card-title mb-1">
+              <span class="badge" style="background-color: {{ script.icon_color }}">{{ script.name }}</span>
+              {% if not script.compatible %}
+                <span class="badge bg-danger ms-2">Erróneo</span>
+              {% endif %}
+            </h5>
+            <p class="card-text text-muted mb-0">{{ script.description }}</p>
+            <p class="small mb-0"><strong>Comando base:</strong> <code>{{ script.base_command or "N/A" }}</code></p>
+          </div>
+
+          <!-- Botones -->
+          <div class="ms-3 d-flex flex-column gap-2">
+            <button class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#info_{{ loop.index }}">
+              <i class="fas fa-info-circle me-1"></i> Información
+            </button>
+            <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#raw_{{ loop.index }}">
+              RAW
+            </button>
+            <a href="{{ url_for('scripts.edit_script', script_name=script.filename) }}" class="btn btn-warning btn-sm">
+              <i class="fas fa-edit me-1"></i> Editar
+            </a>
+            {% if script.compatible %}
+              <button class="btn btn-success btn-sm" onclick="launchScript('{{ script.name }}')">
+                <i class="fas fa-play me-1"></i> Ejecutar
+              </button>
+            {% endif %}
+          </div>
+        </div>
+
+        <!-- Información -->
+        <div class="collapse" id="info_{{ loop.index }}">
+          <div class="card card-body bg-light">
+            {% if script.compatible and script.aggressiveness_sorted %}
+              {% for level, cmd_str in script.aggressiveness_sorted %}
+                <p class="mb-1"><strong>Nivel {{ level }}:</strong> <code>{{ cmd_str }}</code></p>
+              {% endfor %}
+
+            {% else %}
+              <p>Sin información disponible.</p>
+            {% endif %}
+          </div>
+        </div>
+
+        <!-- RAW JSON -->
+        <div class="collapse" id="raw_{{ loop.index }}">
+          <div class="card card-body bg-dark text-light" style="overflow-x:auto;">
+            <pre class="mb-0"><code class="language-json">{{ script | tojson(indent=2) }}</code></pre>
+          </div>
+        </div>
+
+        <!-- Resultado de ejecución -->
+        <div id="result_{{ script.name }}" class="p-2 small text-muted"></div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+function launchScript(scriptName) {
+  const resultBox = document.getElementById('result_' + scriptName);
+  resultBox.innerHTML = '<span class="text-info">Ejecutando...</span>';
+
+  fetch(`/run_script/${scriptName}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      target: prompt("Introduce el target para el script " + scriptName + ":"),
+      aggressiveness: 5
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.status === 'ok') {
+      resultBox.innerHTML = `<span class="text-success">✅ Finalizado. Output: ${data.output}</span>`;
+    } else {
+      resultBox.innerHTML = `<span class="text-danger">❌ Error: ${data.message}</span>`;
+    }
+  })
+  .catch(err => {
+    resultBox.innerHTML = `<span class="text-danger">❌ Error al ejecutar: ${err}</span>`;
+  });
+}
+</script>
+{% endblock %}

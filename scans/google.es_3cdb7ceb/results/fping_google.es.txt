@@ -1,0 +1,16 @@
+
+[2025-07-15 12:30:51] INICIO_MODULO [fping_check]
+[Comando ejecutado]
+fping -c 3 -q google.es
+[Salida]
+google.es : xmt/rcv/%loss = 3/3/0%, min/avg/max = 6.96/7.75/8.66
+
+[2025-07-15 12:30:53] FIN_MODULO [fping_check]
+
+[2025-07-15 12:30:53] INICIO_MODULO [fping_check]
+[Comando ejecutado]
+fping -c 3 -q google.es
+[Salida]
+google.es : xmt/rcv/%loss = 3/3/0%, min/avg/max = 8.00/8.39/8.93
+
+[2025-07-15 12:30:55] FIN_MODULO [fping_check]

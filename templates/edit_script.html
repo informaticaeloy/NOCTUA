@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block title %}Editar Script{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Editar {{ script_name }}</h2>
+
+<!-- Vista de solo lectura con colores -->
+<div class="mb-3">
+  <label class="form-label"><strong>Vista previa (resaltado):</strong></label>
+  <pre class="bg-light p-3 rounded"><code class="language-json">{{ content }}</code></pre>
+</div>
+
+<!-- Textarea para edición -->
+<form method="POST">
+  <div class="editor-container">
+    <div class="line-numbers" id="line-numbers"></div>
+    <textarea id="json-editor" name="content" rows="25" class="form-control editor-area" oninput="updateLineNumbers()" onscroll="syncScroll()">{{ content }}</textarea>
+  </div>
+
+  <div class="mt-3">
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a href="{{ url_for('scripts.list_scripts') }}" class="btn btn-secondary">Cancelar</a>
+  </div>
+</form>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function updateLineNumbers() {
+  const textarea = document.getElementById('json-editor');
+  const lineNumbers = document.getElementById('line-numbers');
+  const lines = textarea.value.split('\n').length;
+  lineNumbers.innerHTML = Array.from({ length: lines }, (_, i) => i + 1).join('<br>');
+}
+
+function syncScroll() {
+  const textarea = document.getElementById('json-editor');
+  const lineNumbers = document.getElementById('line-numbers');
+  lineNumbers.scrollTop = textarea.scrollTop;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  updateLineNumbers();
+  if (window.hljs) hljs.highlightAll();
+});
+</script>
+
+<style>
+.editor-container {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  border: 1px solid #ccc;
+  font-family: monospace;
+  background: #f8f9fa;
+}
+
+.line-numbers {
+  text-align: right;
+  padding-right: 5px;
+  border-right: 1px solid #ccc;
+  background: #f1f1f1;
+  color: #999;
+  user-select: none;
+  font-size: 0.875rem;
+  overflow: hidden;
+}
+
+.editor-area {
+  border: none;
+  resize: none;
+  font-family: monospace;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  background: #ffffff;
+  line-height: 1.4;
+}
+</style>
+{% endblock %}
+

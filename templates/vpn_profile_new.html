@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Nuevo Perfil VPN{% endblock %}
+
+{% block content %}
+<h2>Nuevo Perfil VPN</h2>
+
+<form method="post" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="file" class="form-label">Archivo OVPN</label>
+    <input type="file" class="form-control" id="file" name="file" accept=".ovpn" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Subir</button>
+  <a href="{{ url_for('vpn_profiles.list_profiles') }}" class="btn btn-secondary">Cancelar</a>
+</form>
+{% endblock %}

@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+
+{% block title %}Nuevo Escaneo{% endblock %}
+
+{% block content %}
+<h2>Nuevo Escaneo</h2>
+
+<form method="POST" action="{{ url_for('scan_web.new_scan') }}">
+
+  <div class="mb-3">
+    <label for="scan_name" class="form-label">Nombre del escaneo</label>
+    <input type="text" id="scan_name" name="scan_name" class="form-control" required placeholder="Ej: Escaneo principal">
+  </div>
+
+  <div class="mb-3">
+    <label for="description" class="form-label">Descripción</label>
+    <textarea id="description" name="description" class="form-control" rows="2" placeholder="Descripción breve del objetivo, alcance, etc."></textarea>
+  </div>
+
+  <div class="mb-3">
+    <label for="target" class="form-label">Dominio / IP</label>
+    <input type="text" id="target" name="target" class="form-control" required placeholder="example.com">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Módulos disponibles</label>
+    <div class="d-flex flex-wrap gap-2">
+      {% for mod in modules %}
+        {% if mod.valid %} <!-- class="btn flow-button" -->
+          <button type="button"
+            class="btn flow-button text-nowrap d-flex align-items-center px-3 py-2"
+            style="min-width: 140px; height: 42px; background-color: {{ mod.icon_color }}; color: white;"
+            data-type="mod"
+            data-name="{{ mod.name }}"
+            data-color="{{ mod.icon_color }}">
+            <i class="fa-solid {{ mod.icon or 'fa-cube' }} me-1"></i>{{ mod.name }}
+          </button>
+
+        {% else %}    <!-- class="btn btn-outline-danger" -->
+          <button type="button"
+                  class="btn flow-button text-nowrap d-flex align-items-center px-3 py-2"
+                  style="min-width: 140px; height: 42px; background-color: {{ mod.icon_color }}; color: white;"
+                  data-type="mod"
+                  data-name="{{ mod.name }}"
+                  data-color="{{ mod.icon_color }}" disabled>
+            <i class="fa-solid fa-link-slash me-1"></i>{{ mod.name }}
+          </button>
+
+        {% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Scripts disponibles</label>
+    <div class="d-flex flex-wrap gap-2">
+      {% for scr in scripts %}
+        {% if scr.valid %} <!-- class="btn flow-button" -->
+         <button type="button"
+            class="btn flow-button text-nowrap d-flex align-items-center px-3 py-2"
+            style="min-width: 140px; height: 42px; background-color: {{ scr.icon_color }}; color: white;"
+            data-type="scr"
+            data-name="{{ scr.name }}"
+            data-color="{{ scr.icon_color }}">
+            <i class="fa-solid {{ scr.icon or 'fa-cube' }} me-1"></i>{{ scr.name }}
+          </button>
+        {% else %} <!-- class="btn btn-outline-danger" -->
+          <button type="button"
+                  class="btn flow-button text-nowrap d-flex align-items-center px-3 py-2"
+                  style="min-width: 140px; height: 42px; background-color: {{ scr.icon_color }}; color: red;"
+                  data-type="scr"
+                  data-name="{{ scr.name }}"
+                  data-color="{{ scr.icon_color }}" disabled>
+            <!-- {{ scr.name }} -->
+            <i class="fa-solid fa-link-slash me-1"></i>{{ mod.name }}
+          </button>
+        {% endif %}
+      {% endfor %}
+
+
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Flujo del escaneo</label>
+    <div id="flow-sequence" class="border rounded p-2 bg-white d-flex flex-wrap align-items-center gap-1" style="min-height: 2rem;"></div>
+    <input type="hidden" name="flow" id="flow-input" value="[]">
+  </div>
+
+<div class="mb-3 mx-auto" style="max-width: 600px;">
+  <label>Agresividad:</label>
+  <div id="aggr_badge_wrapper"></div>
+   <span id="aggr_val" class="fw-bold ms-2">5</span>
+   <span id="aggr_text" class="ms-3 badge">Normal (normal)</span>
+   <input type="range" class="form-range" id="aggressiveness" name="aggressiveness" min="0" max="10" step="1" value="5">
+</div>
+
+  <div class="d-flex justify-content-center gap-3 mt-4">
+    <button type="submit" class="btn btn-primary">Añadir</button>
+    <a href="{{ url_for('scan_web.index') }}" class="btn btn-secondary">Cancelar</a>
+  </div>
+</form>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const flowContainer = document.getElementById("flow-sequence");
+  const flowInput = document.getElementById("flow-input");
+
+  function updateFlowInput() {
+    const items = Array.from(flowContainer.querySelectorAll(".flow-item"));
+    const flow = items.map(el => ({
+      type: el.dataset.type,
+      name: el.dataset.name
+    }));
+    flowInput.value = JSON.stringify(flow);
+  }
+
+document.querySelectorAll(".flow-button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const color = btn.dataset.color || "#6c757d";
+    const label = btn.dataset.name;
+    const type = btn.dataset.type;
+
+    // Añadir flecha si ya hay elementos
+    if (flowContainer.children.length > 0) {
+      const arrow = document.createElement("span");
+      arrow.textContent = "→";
+      arrow.className = "mx-1 text-muted";
+      flowContainer.appendChild(arrow);
+    }
+
+    // Crear el globito
+    const item = document.createElement("span");
+    //item.className = "badge rounded-pill flow-item px-3 py-2 position-relative"; // position-relative para posicionar el aspa
+    item.className = "badge rounded-pill flow-item d-flex align-items-center justify-content-center px-3 position-relative";
+    item.style.minWidth = "120px";
+    item.style.height = "38px";
+    item.style.fontSize = "0.9rem";
+    item.style.whiteSpace = "nowrap";
+    item.style.overflow = "hidden";
+    item.style.textOverflow = "ellipsis";
+
+    item.style.backgroundColor = color;
+    item.style.color = "#fff";
+    item.dataset.type = type;
+    item.dataset.name = label;
+    item.textContent = label;
+
+    // Crear el aspa de cierre
+    const closeBtn = document.createElement("span");
+    closeBtn.innerHTML = "&times;"; // símbolo ✖
+    closeBtn.style.position = "absolute";
+    closeBtn.style.top = "2px";
+    closeBtn.style.right = "6px";
+    closeBtn.style.cursor = "pointer";
+    closeBtn.style.fontWeight = "bold";
+    closeBtn.style.fontSize = "1.2em";
+    closeBtn.style.lineHeight = "1";
+    closeBtn.style.color = "rgba(255,255,255,0.9)";
+    closeBtn.title = "Quitar";
+
+    closeBtn.addEventListener("click", (e) => {
+      e.stopPropagation(); // Evitar el click en el globito padre
+      // Quitar flechas alrededor del elemento eliminado
+      const prev = item.previousSibling;
+      const next = item.nextSibling;
+      if (prev && prev.textContent === "→") flowContainer.removeChild(prev);
+      else if (next && next.textContent === "→") flowContainer.removeChild(next);
+      // Quitar el globito
+      flowContainer.removeChild(item);
+      updateFlowInput();
+    });
+
+    // Añadir aspa al globito
+    item.appendChild(closeBtn);
+
+    // También puedes mantener el click en el globito para eliminar (opcional)
+    item.addEventListener("click", () => {
+      closeBtn.click();
+    });
+
+    flowContainer.appendChild(item);
+    updateFlowInput();
+  });
+});
+
+
+  // Slider de agresividad avanzado
+  const slider = document.getElementById('aggressiveness');
+  const aggrVal = document.getElementById('aggr_val');
+  const aggrText = document.getElementById('aggr_text');
+
+  function updateSliderVisual() {
+    if (!slider || !aggrVal || !aggrText) return;
+
+    const val = parseInt(slider.value, 10);
+    const percent = ((val - slider.min) / (slider.max - slider.min)) * 100;
+    slider.style.background = `linear-gradient(to right, #0d6efd 0%, #0d6efd ${percent}%, #dee2e6 ${percent}%, #dee2e6 100%)`;
+    aggrVal.textContent = val;
+
+    const levels = {
+      0: { label: "Muy Baja (paranoid)", color: "#6c757d" },
+      2: { label: "Baja (sneaky)", color: "#0dcaf0" },
+      4: { label: "Moderado (polite)", color: "#198754" },
+      6: { label: "Normal (normal)", color: "#ffc107" },
+      8: { label: "Alta (aggressive)", color: "#fd7e14" },
+      10: { label: "Muy Alta (insane)", color: "#dc3545" }
+    };
+
+    const closest = Object.keys(levels)
+      .map(Number)
+      .reduce((prev, curr) => Math.abs(curr - val) < Math.abs(prev - val) ? curr : prev);
+
+    const level = levels[closest];
+    aggrText.textContent = level.label;
+    aggrText.style.backgroundColor = level.color;
+    aggrText.style.color = "#fff";
+    aggrText.style.padding = "0.2em 0.6em";
+    aggrText.style.borderRadius = "0.3em";
+  }
+
+  if (slider) {
+    slider.addEventListener('input', updateSliderVisual);
+    updateSliderVisual();
+  }
+});
+</script>
+{% endblock %}
+
+

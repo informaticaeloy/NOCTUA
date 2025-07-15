@@ -1,0 +1,6 @@
+[2025-07-15 12:30:51] fping_check: start
+[2025-07-15 12:30:53] fping_check: end
+[2025-07-15 12:30:53] ping: start
+[2025-07-15 12:30:53] ping: error: Command '['ping', '-c', '4', 'google.es']' returned non-zero exit status 2.
+[2025-07-15 12:30:53] fping_check: start
+[2025-07-15 12:30:55] fping_check: end
