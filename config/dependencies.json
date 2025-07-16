@@ -1,5 +1,6 @@
 {
   "ping": ["ping", "-V"],
+  "fping": ["fping", "-v"],
   "chromium": ["chromium", "--version"],
   "firefox": ["firefox", "--version"],
   "curl": ["curl", "-V"],

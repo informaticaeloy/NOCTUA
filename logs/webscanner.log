@@ -2321,3 +2321,14 @@ NameError: name 'secure_filename' is not defined
 2025-07-09 13:46:14,280 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
 2025-07-14 18:16:10,563 - INFO - app - Aplicación iniciada
 2025-07-15 12:29:05,229 - INFO - app - Aplicación iniciada
+2025-07-15 13:06:33,052 - INFO - app - Aplicación iniciada
+2025-07-15 15:42:00,606 - INFO - app - Aplicación iniciada
+2025-07-15 15:48:34,212 - INFO - app - Aplicación iniciada
+2025-07-15 15:54:45,957 - INFO - app - Aplicación iniciada
+2025-07-15 15:55:41,898 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-15 15:56:48,313 - INFO - app - Aplicación iniciada
+2025-07-15 15:58:26,129 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-15 16:00:31,644 - INFO - app - Aplicación iniciada
+2025-07-15 16:21:25,407 - INFO - app - Aplicación iniciada
+2025-07-15 16:21:46,174 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-07-15 17:28:12,094 - WARNING - app - 404 Not Found: http://127.0.0.1:8000/.well-known/appspecific/com.chrome.devtools.json
