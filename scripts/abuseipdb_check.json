@@ -1,0 +1,17 @@
+{
+  "name": "abuseipdb_check",
+  "description": "Verifica si una IP ha sido reportada por abuso mediante la API de AbuseIPDB.",
+  "script": "abuseipdb_check.py",
+  "arguments": [
+    "{target}",
+    "{ABUSEIPDB_API_KEY}"
+  ],
+  "output": {
+    "path": "results/abuseipdb_{target}.json",
+    "format": "json"
+  },
+  "help": "https://docs.abuseipdb.com/",
+  "icon_color": "#e91e63",
+  "enabled": true,
+  "icon": "fa-bug"
+}

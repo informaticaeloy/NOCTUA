@@ -1,0 +1,35 @@
+{
+  "name": "sslyze_scan",
+  "description": "An\u00e1lisis SSL/TLS con sslyze",
+  "command": "python3",
+  "python_file": "sslyze_scan.py",
+  "params": {
+    "default": [],
+    "aggressiveness": {
+      "1": [
+        "{target}",
+        "1"
+      ],
+      "5": [
+        "{target}",
+        "5"
+      ],
+      "10": [
+        "{target}",
+        "10"
+      ]
+    }
+  },
+  "arguments": [
+    "{target}",
+    "{aggressiveness}"
+  ],
+  "output": {
+    "path": "results/sslyze_{target}.txt",
+    "format": "text"
+  },
+  "help": "https://github.com/nabla-c0d3/sslyze",
+  "icon_color": "#198754",
+  "enabled": true,
+  "icon": "fa-lock-open"
+}

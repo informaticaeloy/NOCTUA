@@ -1,0 +1,16 @@
+{
+  "name": "ip_reputation_talos",
+  "description": "Consulta la reputaci\u00f3n de una IP seg\u00fan Cisco Talos Intelligence.",
+  "script": "ip_reputation_talos.py",
+  "arguments": [
+    "{target}"
+  ],
+  "output": {
+    "path": "results/talos_{target}.txt",
+    "format": "text"
+  },
+  "help": "https://talosintelligence.com/",
+  "icon_color": "#2196f3",
+  "enabled": true,
+  "icon": "fa-location-dot"
+}
